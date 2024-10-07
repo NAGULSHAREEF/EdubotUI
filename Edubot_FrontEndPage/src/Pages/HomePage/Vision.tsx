@@ -6,7 +6,7 @@ const Vision: React.FC = () => {
     <div className="container mx-auto px-4 py-8 overflow-hidden md:max-h-[600px] ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="space-y-6 md:translate-y-[-100px]">
-          <h3 className="text-sm font-semibold text-gray-500 uppercase">#our vision</h3>
+          <h3 className="text-md font-semibold text-gray-500 uppercase">#our vision</h3>
           <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold text-gray-900">
             We are <span className="text-yellow-500">partner</span> in your learning journey
           </h1>

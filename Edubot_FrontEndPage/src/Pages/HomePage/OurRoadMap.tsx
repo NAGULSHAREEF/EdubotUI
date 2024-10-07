@@ -3,7 +3,6 @@ import React from 'react';
 const OurRoadMap: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-10">
-    
       <div className="text-center mb-10">
         <h2 className="text-[44px] font-bold">
           Our roadmap <span className="text-yellow-500">under development</span>

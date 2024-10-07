@@ -6,10 +6,9 @@ const HybridRoles: React.FC = () => {
   return (
     <section className="py-8 px-4 md:px-8 lg:px-16">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">        
           <div className="text-left space-y-4">
-            <p className="text-[#17174D] font-semibold text-sm">#Must know</p>
+            <p className="text-[#17174D] font-semibold text-lg">#Must know</p>
             <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">
               <span className="text-yellow-400">Hybrid roles :</span> <span className="text-[#092133]">The future<br/> of tech careers</span>
             </h1>

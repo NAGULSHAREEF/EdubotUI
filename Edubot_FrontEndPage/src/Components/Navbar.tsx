@@ -20,9 +20,9 @@ const Navbar = () => {
             <img src="/src/assets/logo.svg" alt="EduBot" className="h-8 pl-3" />
           </div>
           <div className="hidden md:flex space-x-6 lg:translate-x-80 order-2 md:order-1">
-            <a href="#about" className="hover:text-gray-300">About Us</a>
-            <a href="#services" className="hover:text-gray-300">Our Services</a>
-            <a href="#updates" className="hover:text-gray-300">Latest updates</a>
+            <a href="#about" className="hover:text-[#F2B331]">About Us</a>
+            <a href="#services" className="hover:text-[#F2B331]">Our Services</a>
+            <a href="#updates" className="hover:text-[#F2B331]">Latest updates</a>
           </div>
           <div className="order-3 md:order-2">
             <button className="bg-white text-yellow-600 py-2 px-6 rounded-full border-2 border-yellow-600 lg:translate-x-[-30px]">
@@ -31,9 +31,9 @@ const Navbar = () => {
           </div>
           <div className={`absolute top-16 left-0 w-full md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
             <div className="bg-white w-full p-4 shadow-lg flex flex-col items-start space-y-4 z-10">
-              <a href="#about" className="hover:text-gray-300 w-full">About Us</a>
-              <a href="#services" className="hover:text-gray-300 w-full">Our Services</a>
-              <a href="#updates" className="hover:text-gray-300 w-full">Latest updates</a>
+              <a href="#about" className="hover:text-[#F2B331] w-full">About Us</a>
+              <a href="#services" className="hover:text-[#F2B331] w-full">Our Services</a>
+              <a href="#updates" className="hover:text-[#F2B331] w-full">Latest updates</a>
             </div>
           </div>
         </div>

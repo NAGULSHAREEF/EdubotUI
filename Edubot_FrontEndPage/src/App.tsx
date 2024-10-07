@@ -13,7 +13,6 @@ import OurRoadMap from './Pages/HomePage/OurRoadMap'
 import Questions from './Pages/HomePage/Questions'
 import GetInTouch from './Pages/HomePage/GetInTouch'
 function App() {
-
   return (
     <>
       <Navbar />
