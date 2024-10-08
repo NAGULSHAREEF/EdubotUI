@@ -22,7 +22,7 @@ const Carousel = () => {
     <div className="relative w-full h-full overflow-hidden">
       <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {/* HeroSection */}
-        <div className="min-w-full bg-[#312860] text-white md:w-full overflow-hidden flex flex-col md:flex-row md:h-[500px] h-[880px] rounded-b-3xl">
+        <div className="min-w-full bg-[#312860] text-white md:w-full overflow-hidden flex flex-col md:flex-row md:h-[500px] h-[750px] rounded-b-3xl">
           <div className="flex flex-col justify-center items-start w-full md:w-1/2 p-4 md:p-20 gap-8 md:translate-y-[100px]">
             <h3 className="text-sm uppercase tracking-wide font-medium mb-2 translate-y-14 md:translate-y-5">
               #our motive
@@ -36,10 +36,10 @@ const Carousel = () => {
               <span className="hidden md:block text-3xl md:text-5xl">Prepare Students to <span className="text-yellow-400">Thrive</span>,</span>
               <span className="hidden md:block text-3xl md:text-5xl"> Not Just Survive.</span>
             </h1>
-            <p className="text-[24px] mb-4 md:-mt-3">
-              Strengthen student employability with skill<br /> training programs and courses from India's best<br /> growing platform.
+            <p className="md:text-[24px] text-[18px] mb-4 md:-mt-3">
+              Strengthen student employability with skill<br className=" hidden md:block " /> training programs and courses from India's best<br className=" hidden md:block "  /> growing platform.
             </p>
-            <div className="flex flex-row gap-4 mb-4">
+            <div className="flex flex-row gap-4 mb-4 md:-mt-0 -mt-8">
               <button className="bg-yellow-400 text-[#312860] font-semibold px-4 py-2 rounded-full hover:bg-yellow-500">
                 Contact Us
               </button>
@@ -98,15 +98,15 @@ const Carousel = () => {
               </svg>
             </div>
           </div>
-          <div className="relative md:translate-x-24 md:translate-y-[-240px] translate-y-[-200px] translate-x-10">
+          <div className="relative md:translate-x-24 md:translate-y-[-260px] translate-y-[-220px] translate-x-10">
             <img
               src="/src/assets/heroSectionImage.svg"
               alt="Hero Image"
-              className="md:w-[600px] md:h-[1100px] rounded-lg relative z-10"
+              className="md:w-[580px] md:h-[1000px] md:translate-y-10 rounded-lg relative z-10"
             />
             <div className="absolute inset-0 flex items-center justify-center bg-opacity-10 z-0">
               <div
-                className="bg-[#FFFFFF66] p-4 shadow-lg text-black w-[250px] md:w-[390px] h-auto md:h-[140px] md:translate-y-[410px] md:translate-x-[-180px] translate-x-[-120px] translate-y-[-130px] rounded-t-3xl border border-blue-500">
+                className="bg-[#FFFFFF66] p-4 shadow-lg text-black w-[250px] md:w-[390px] h-auto md:h-[140px] md:translate-y-[410px] md:translate-x-[-200px] translate-x-[-120px] translate-y-[-130px] rounded-t-3xl border border-blue-500">
                 <div className="flex items-center mb-2">
                   <img
                     src="/src/assets/bulb.svg"
@@ -142,10 +142,10 @@ const Carousel = () => {
                 <span className="text-yellow-400">advanced programs.</span>
               </span>
             </h1>
-            <p className="text-[24px] mb-4 md:-mt-3">
+            <p className="text-[18px] md:text-[24px] mb-4 md:-mt-3">
               With easy-to-user authoring tools for efficient and effective learning.
             </p>
-            <div className="flex flex-row gap-4 mb-4">
+            <div className="flex flex-row gap-4 mb-4 md:-mt-0 -mt-0">
               <button className="bg-yellow-400 text-[#312860] font-semibold px-4 py-2 rounded-full hover:bg-yellow-500">
                 Contact Us
               </button>
@@ -203,7 +203,7 @@ const Carousel = () => {
             <img
               src="/src/assets/HeroSection2.png"
               alt="Hero Image"
-              className="md:w-[700px] md:h-[500px] rounded-lg relative z-10"
+              className="md:w-[700px] w-[550px] h-[350px] md:h-[500px] rounded-lg relative z-10"
             />
             <div className="absolute inset-0 flex items-center justify-center bg-opacity-10 z-0">
               {/* Additional content if necessary */}
@@ -218,13 +218,20 @@ const Carousel = () => {
               #our motive
             </h3>
             <h1 className="font-bold leading-tight whitespace-nowrap">
-              <span className="hidden md:block text-3xl md:text-5xl">Unlock the Future with<span className="text-[#F2B331]">Edubot's </span>,</span>
-              <span className="hidden md:block text-3xl md:text-5xl text-[#F2B331]"> AI-Powered Education!.</span>
+              <div className="translate-y-7">
+                <span className="block md:hidden text-3xl md:text-5xl">Prepare Students</span>
+                <span className="block md:hidden text-3xl md:text-5xl">to <span className="text-yellow-400">Thrive</span>,</span>
+                <span className="block md:hidden text-3xl md:text-5xl"> Not Just Survive.</span>
+              </div>
+              <span className="hidden md:block text-3xl md:text-5xl">
+                Deliver quality Education through<br /> engaging,&nbsp;
+                <span className="text-yellow-400">advanced programs.</span>
+              </span>
             </h1>
-            <p className="text-[24px] mb-4 md:-mt-3">
-              Strengthen student employability with skill<br /> training programs and courses from India's best<br /> growing platform.
+            <p className="text-[18px] md:text-[24px] mb-4 md:-mt-3 ">
+              Strengthen student employability with skill<br className=" hidden md:block "  /> training programs and courses from India's best<br className=" hidden md:block "  /> growing platform.
             </p>
-            <div className="flex flex-row gap-4 mb-4">
+            <div className="flex flex-row gap-4 mb-4 md:-mt-0 -mt-8 ">
               <button className="bg-[#F2B331] text-[#312860] font-semibold px-4 py-2 rounded-full hover:bg-yellow-500">
                 Contact Us
               </button>
@@ -279,11 +286,11 @@ const Carousel = () => {
           </div>
           <div className="relative md:translate-y-[-100px]">
             <div
-              className="bg-[url('/src/assets/laptop.svg')] bg-cover bg-center bg-no-repeat w-[300px] md:w-[433px] h-[300px] md:h-[446px] rounded-lg relative z-10 md:translate-x-[250px] md:translate-y-[120px] translate-y-[-200px] translate-x-[150px]"
+              className="bg-[url('/src/assets/laptop.svg')] bg-cover bg-center bg-no-repeat w-[300px] md:w-[433px] h-[300px] md:h-[446px] rounded-lg relative z-10 md:translate-x-[250px] md:translate-y-[120px] translate-y-[-190px] translate-x-[150px]"
             >
               <div className="flex items-center justify-center bg-opacity-10 h-full">
                 <div
-                  className="bg-[#FFFFFF66] p-4 shadow-lg text-black w-[250px] md:w-[300px] h-auto md:h-[140px] md:translate-x-[-300px] md:translate-y-[180px] translate-x-[-180px] translate-y-[100px] rounded-t-3xl border border-blue-500"
+                  className="bg-[#FFFFFF66] p-4 shadow-lg text-black w-[250px] md:w-[300px] h-auto md:h-[140px] md:translate-x-[-300px] md:translate-y-[180px] translate-x-[-170px] translate-y-[100px] rounded-t-3xl border border-blue-500"
                 >
                   <div className="flex items-center mb-2">
                     <h4 className="text-sm lg:text-base font-medium">Learning through Edubot</h4>
