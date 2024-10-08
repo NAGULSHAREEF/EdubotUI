@@ -1,6 +1,7 @@
 import './App.css'
 import Navbar from './Components/Navbar'
 import Footer from './Components/Footer'
+import FutureFestButton from './Components/FutureFestButton'
 import HeroSection from './Pages/HomePage/HeroSection'
 import Vision from './Pages/HomePage/Vision'
 import Services from './Pages/HomePage/Services'
@@ -28,6 +29,7 @@ function App() {
       <Questions />
       <GetInTouch />
       <Footer />
+      <FutureFestButton />
     </>
   )
 }
