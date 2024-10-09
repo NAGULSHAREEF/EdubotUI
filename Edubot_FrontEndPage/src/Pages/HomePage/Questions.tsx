@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
-
-
 interface FaqItemProps {
   question: string;
   answer: string;
 }
-
-
 const FaqItem: React.FC<FaqItemProps> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false); 
 
@@ -29,8 +25,6 @@ const FaqItem: React.FC<FaqItemProps> = ({ question, answer }) => {
     </div>
   );
 };
-
-
 const Questions: React.FC = () => {
 
   const faqs = [
@@ -62,9 +56,7 @@ const Questions: React.FC = () => {
       <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
         Got Questions?{' '}
         <span className="text-yellow-500">We’ve got all<br/> your answers!</span>
-      </h2>
-
-      
+      </h2>  
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-4 bg-[#FDF4E0] rounded-tl-3xl rounded-br-3xl">
         <div className="border border-[#FDF4E0] rounded-tl-3xl rounded-br-3xl p-6">
           {faqs.map((faq, index) => (

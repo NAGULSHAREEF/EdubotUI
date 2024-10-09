@@ -201,7 +201,7 @@ const HeroSection = () => {
           </div>
           <div className="relative md:translate-x-[-10px] md:translate-y-24 translate-y-[-200px] translate-x-50">
             <img
-              src="/src/assets/HeroSection2.png"
+              src="/src/assets/HeroSection2 (1).png"
               alt="Hero Image"
               className="md:w-[700px] w-[550px] h-[350px] md:h-[500px] rounded-lg relative z-10"
             />
