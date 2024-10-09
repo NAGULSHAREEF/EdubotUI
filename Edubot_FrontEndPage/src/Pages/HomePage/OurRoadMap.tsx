@@ -4,10 +4,10 @@ const OurRoadMap: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-10">
       <div className="text-center mb-10">
-        <h2 className="text-[44px] font-bold">
+        <h2 className=" md:text-[44px] text-[38px] font-bold">
           Our roadmap <span className="text-yellow-500">under development</span>
         </h2>
-        <p className="text-[#333333] mt-4 text-[18px]">
+        <p className="text-[#333333] mt-4 md:text-[18px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor<br/> incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
@@ -26,14 +26,14 @@ const OurRoadMap: React.FC = () => {
             <div className="hidden md:block absolute left-0 h-4 w-4 bg-yellow-500 rounded-full"></div>
             <div className="hidden md:block absolute right-0 h-4 w-4 bg-yellow-500 rounded-full"></div>
           </div>
-          <div className="relative w-2 h-[150px] flex flex-col items-center md:translate-x-[-120px] md:translate-y-[-70px] translate-x-[180px]">
+          <div className="relative w-2 h-[90px] flex flex-col items-center md:translate-x-[-120px] md:translate-y-[-70px] translate-y-[18px] translate-x-[200px]">
   <div className="h-full border-l-2 border-dashed border-yellow-500 md:hidden"></div>
   <div className="absolute top-0 h-4 w-4 bg-yellow-500 rounded-full md:hidden"></div>
   <div className="absolute bottom-0 h-4 w-4 bg-yellow-500 rounded-full md:hidden"></div>
 </div>
 </div>
         
-        <div className="text-center">
+        <div className="text-center md:translate-y-0 translate-y-[-20px]">
           <img
             src="/src/assets/LMS.svg"
             alt="Advanced Learning Management System"
@@ -43,7 +43,7 @@ const OurRoadMap: React.FC = () => {
         </div>
 
         
-        <div className="text-center md:translate-x-[-10px] md:translate-y-[10px] translate-y-[150px]">
+        <div className="text-center md:translate-x-[-10px] md:translate-y-[10px] translate-y-[60px]">
           <img
             src="src/assets/dashboard.svg"
             alt="Analytic TPO Dashboard"
@@ -57,7 +57,7 @@ const OurRoadMap: React.FC = () => {
 </div>
         </div>
       </div>
-      <div className="relative w-2 h-[150px] flex flex-col items-center md:translate-x-[-120px] md:translate-y-[-70px] translate-y-[-200px] translate-x-[180px] md:hidden">
+      <div className="relative w-2 h-[90px] flex flex-col items-center md:translate-x-[-120px] md:translate-y-[-70px] translate-y-[-230px] translate-x-[200px] md:hidden">
   <div className="h-full border-l-2 border-dashed border-yellow-500"></div>
   <div className="absolute top-0 h-4 w-4 bg-yellow-500 rounded-full"></div>
   <div className="absolute bottom-0 h-4 w-4 bg-yellow-500 rounded-full"></div>

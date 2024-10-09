@@ -135,27 +135,29 @@ const Services: React.FC = () => {
         <h2 className="text-2xl md:text-4xl font-bold">
           We have got you<br /> covered with our <span className="text-yellow-500">services</span>
         </h2>
-        <div className="mt-6 flex flex-row justify-center items-center space-x-2 md:space-x-4">
-          <button
-            onClick={() => handleSectionChange('internships', 'src/assets/services1.png')}
-            className={`bg-[#1D1F71] text-white px-[4px] py-[4px] md:text-[18px] text-[13px] md:px-6 md:py-2 rounded-full flex items-center font-semibold ${activeSection === 'internships' && 'bg-[#1D1F71]'}`}
-          >
-            <span className="w-2 h-2 bg-[#F2B331] rounded-full mr-2"></span>
-            Join for Internships
-          </button>
-          <button
-            onClick={() => handleSectionChange('courses', 'src/assets/services1.png')}
-            className={`bg-white text-[#333333] px-4 py-2 md:px-6 md:py-2 md:text-[18px] text-[13px] rounded-full shadow-md font-semibold ${activeSection === 'courses'}`}
-          >
-            Skill Oriented Courses (soc)
-          </button>
-          <button
-            onClick={() => handleSectionChange('incubation', 'src/assets/services1.png')}
-            className={`bg-white text-[#333333] px-4 py-2 md:px-6 md:py-2 md:text-[18px] text-[13px] rounded-full shadow-md font-semibold ${activeSection === 'incubation'}`}
-          >
-            Incubation Centre
-          </button>
-        </div>
+        <div className="mt-6 flex flex-row justify-center items-center space-x-0 md:space-x-4">
+        <button
+          onClick={() => handleSectionChange('internships', 'src/assets/services1.png')}
+          className={`flex items-center font-semibold px-[4px] py-[11px] md:px-6 md:py-2 md:text-[18px] text-[10px] rounded-full whitespace-nowrap ${activeSection === 'internships' ? 'bg-[#1D1F71] text-white' : 'bg-white text-[#333333]'} ${activeSection !== 'internships' && 'mr-[-1px]'}`}
+        >
+          {activeSection === 'internships' && <span className="w-2 h-2 bg-[#F2B331] rounded-full mr-2"></span>}
+          Join for Internships
+        </button>
+        <button
+          onClick={() => handleSectionChange('courses', 'src/assets/services1.png')}
+          className={`flex items-center font-semibold px-4 py-2 md:px-6 md:py-2 md:text-[18px] text-[10px] rounded-full shadow-md whitespace-nowrap md:whitespace-normal ${activeSection === 'courses' ? 'bg-[#1D1F71] text-white' : 'bg-white text-[#333333]'} ${activeSection !== 'courses' && 'mr-[-1px]'}`}
+        >
+          {activeSection === 'courses' && <span className="w-2 h-2 bg-[#F2B331] rounded-full mr-2"></span>}
+          Skill Oriented Courses (soc)
+        </button>
+        <button
+          onClick={() => handleSectionChange('incubation', 'src/assets/services1.png')}
+          className={`flex items-center font-semibold px-4 py-2 md:px-6 md:py-2 md:text-[18px] text-[10px] rounded-full shadow-md ${activeSection === 'incubation' ? 'bg-[#1D1F71] text-white' : 'bg-white text-[#333333]'} whitespace-nowrap md:whitespace-normal ${activeSection !== 'incubation' && 'mr-[-1px]'}`}
+        >
+          {activeSection === 'incubation' && <span className="w-2 h-2 bg-[#F2B331] rounded-full mr-2"></span>}
+          Incubation Centre
+        </button>
+      </div>
       </div>
 
       {/* Bottom Section with Growing Card Content */}
@@ -164,7 +166,7 @@ const Services: React.FC = () => {
           
           {activeSection === 'internships' && (
             <div className="md:w-1/2 space-y-6 text-center md:text-left p-6 rounded-lg text-[#222222] ">
-              <h3 className="text-[50px] font-bold">
+              <h3 className="text-[40px] font-bold">
                 Internships that Shape Your Path to Success
               </h3>
               <p className="text-[#222222]">
@@ -207,7 +209,7 @@ const Services: React.FC = () => {
             </div>
           )}
         
-          <div className="mt-8 md:mt-0 md:w-1/2 flex justify-center md:translate-y-[-30px] -mb-20">
+          <div className="mt-8 md:mt-0 md:w-1/2 flex justify-center md:translate-y-[-30px] translate-y-[-30px] -mb-20">
             <img
               src={imageSrc}
               alt={activeSection}
