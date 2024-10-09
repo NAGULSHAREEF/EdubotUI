@@ -22,7 +22,7 @@ const HeroSection: React.FC = () => {
   <span className="hidden md:block text-3xl md:text-5xl">Prepare Students to <span className="text-yellow-400">Thrive</span>,</span>
   <span className="hidden md:block text-3xl md:text-5xl"> Not Just Survive.</span>
 </h1>
-          <p className="text-[24px] mb-4"> {/* Added margin-bottom */}
+          <p className="text-[24px] mb-4 font-Ubuntu"> {/* Added margin-bottom */}
             Strengthen student employability with skill<br/> training programs and courses from India's best<br/> growing platform.
           </p>
           <div className="flex flex-row gap-4 mb-4"> {/* Added margin-bottom */}
@@ -37,19 +37,19 @@ const HeroSection: React.FC = () => {
   <button
     id="dot1"
     title='facts'
-    className="w-3 h-3 bg-gray-300 rounded-full hover:bg-yellow-400 transition"
+    className="w-2.5 h-2.5 bg-gray-300 rounded-full hover:bg-yellow-400 transition"
     onClick={() => handleDotClick('#')}
   />
   <button
   title='facts'
     id="dot2"
-    className="w-3 h-3 bg-gray-300 rounded-full hover:bg-yellow-400 transition"
+    className="w-2.5 h-2.5 bg-gray-300 rounded-full hover:bg-yellow-400 transition"
     onClick={() => handleDotClick('#')}
   />
   <button
   title='facts'
     id="dot3"
-    className="w-3 h-3 bg-gray-300 rounded-full hover:bg-yellow-400 transition"
+    className="w-2.5 h-2.5 bg-gray-300 rounded-full hover:bg-yellow-400 transition"
     onClick={() => handleDotClick('#')}
   />
           </div>
@@ -101,9 +101,9 @@ const HeroSection: React.FC = () => {
         alt="Icon"
         className="inline-block mr-2"
       />
-      <h4 className="text-sm lg:text-base font-medium">Industry-relevant skills</h4>
+      <h4 className="text-sm lg:text-base font-medium text-white">Industry-relevant skills</h4>
     </div>
-    <p className="text-xs :text-sm">
+    <p className="text-xs :text-sm text-white Font-Ubuntu">
       Learning through Edubot has been an<br /> 
       incredible experience, allowing me to<br /> 
       develop essential industry-relevant skills.

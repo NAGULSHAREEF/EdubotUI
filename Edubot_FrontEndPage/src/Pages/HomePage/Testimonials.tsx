@@ -32,7 +32,7 @@ export default function Component() {
 
   return (
       <div className="relative flex w-full flex-row justify-center bg-[#17174D] text-white z-0 mt-10">
-        <div className="flex flex-1 flex-col w-[60%] justify-between pt-16 pb-16 rounded-r-3xl bg-[#FDF0D6] z-10 relative">
+        <div className="flex flex-1 md:flex-col w-[60%] justify-between pt-16 pb-16 rounded-r-3xl bg-[#FDF0D6] z-10 relative">
           <div className="mb-8 flex flex-row justify-center gap-20 ml-[-40px]">
             {[
               { percentage: '50-70%', description: 'Drop in placements of many Collages' },

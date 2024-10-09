@@ -17,7 +17,7 @@ const Navbar = () => {
             <img src="/src/assets/logo.svg" alt="EduBot" className="h-8" />
           </div>
           <div className="hidden md:flex items-center space-x-4 order-1">
-            <img src="/src/assets/logo.svg" alt="EduBot" className="h-8 pl-3" />
+            <img src="/src/assets/logo.svg" alt="EduBot" className="h-14 pl-3" />
           </div>
           <div className="hidden md:flex space-x-6 lg:translate-x-80 order-2 md:order-1">
             <a href="#about" className="hover:text-[#F2B331]">About Us</a>
@@ -25,7 +25,7 @@ const Navbar = () => {
             <a href="#updates" className="hover:text-[#F2B331]">Latest updates</a>
           </div>
           <div className="order-3 md:order-2">
-            <button className="bg-white text-yellow-600 py-2 px-6 rounded-full border-2 border-yellow-600 lg:translate-x-[-30px]">
+            <button className="bg-white text-[#F2B331] py-2 px-6 rounded-full border-2 border-[#F2B331] lg:translate-x-[-30px]">
               Login
             </button>
           </div>
