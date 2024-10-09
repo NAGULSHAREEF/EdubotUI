@@ -135,24 +135,24 @@ const Services: React.FC = () => {
         <h2 className="text-2xl md:text-4xl font-bold">
           We have got you<br /> covered with our <span className="text-yellow-500">services</span>
         </h2>
-        <div className="mt-6 flex flex-row justify-center items-center space-x-0 md:space-x-4">
+        <div className="mt-6 flex md:bg-[#fff] md:shadow-lg  flex-row justify-center items-center space-x-0 md:space-x-4">
         <button
           onClick={() => handleSectionChange('internships', 'src/assets/services1.png')}
-          className={`flex items-center font-semibold px-[4px] py-[11px] md:px-6 md:py-2 md:text-[18px] text-[10px] rounded-full whitespace-nowrap ${activeSection === 'internships' ? 'bg-[#1D1F71] text-white' : 'bg-white text-[#333333]'} ${activeSection !== 'internships' && 'mr-[-1px]'}`}
+          className={`flex items-center font-semibold px-[4px] py-[11px] md:px-6 md:py-2 md:text-[18px] text-[10px] whitespace-nowrap ${activeSection === 'internships' ? 'bg-[#1D1F71] text-white' : 'bg-white text-[#333333]'} ${activeSection !== 'internships' && 'mr-[-1px]'}`}
         >
-          {activeSection === 'internships' && <span className="w-2 h-2 bg-[#F2B331] rounded-full mr-2"></span>}
+          {activeSection === 'internships' && <span className="w-2 h-2 bg-[#F2B331] mr-2"></span>}
           Join for Internships
         </button>
         <button
           onClick={() => handleSectionChange('courses', 'src/assets/services1.png')}
-          className={`flex items-center font-semibold px-4 py-2 md:px-6 md:py-2 md:text-[18px] text-[10px] rounded-full shadow-md whitespace-nowrap md:whitespace-normal ${activeSection === 'courses' ? 'bg-[#1D1F71] text-white' : 'bg-white text-[#333333]'} ${activeSection !== 'courses' && 'mr-[-1px]'}`}
+          className={`flex items-center font-semibold px-4 py-2 md:px-6 md:py-2 md:text-[18px] text-[10px] whitespace-nowrap md:whitespace-normal ${activeSection === 'courses' ? 'bg-[#1D1F71] text-white' : 'bg-white text-[#333333]'} ${activeSection !== 'courses' && 'mr-[-1px]'}`}
         >
           {activeSection === 'courses' && <span className="w-2 h-2 bg-[#F2B331] rounded-full mr-2"></span>}
           Skill Oriented Courses (soc)
         </button>
         <button
           onClick={() => handleSectionChange('incubation', 'src/assets/services1.png')}
-          className={`flex items-center font-semibold px-4 py-2 md:px-6 md:py-2 md:text-[18px] text-[10px] rounded-full shadow-md ${activeSection === 'incubation' ? 'bg-[#1D1F71] text-white' : 'bg-white text-[#333333]'} whitespace-nowrap md:whitespace-normal ${activeSection !== 'incubation' && 'mr-[-1px]'}`}
+          className={`flex items-center font-semibold px-4 py-2 md:px-6 md:py-2 md:text-[18px] text-[10px] ${activeSection === 'incubation' ? 'bg-[#1D1F71] text-white' : 'bg-white text-[#333333]'} whitespace-nowrap md:whitespace-normal ${activeSection !== 'incubation' && 'mr-[-1px]'}`}
         >
           {activeSection === 'incubation' && <span className="w-2 h-2 bg-[#F2B331] rounded-full mr-2"></span>}
           Incubation Centre
