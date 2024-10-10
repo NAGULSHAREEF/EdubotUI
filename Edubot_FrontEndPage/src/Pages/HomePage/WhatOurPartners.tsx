@@ -7,7 +7,7 @@ interface CardProps {
 }
 
 const Card = ({ content, author, role }: CardProps) => (
-  <div className="bg-[#FDF4E0] p-6 rounded-xl mr-4 h-[270px] w-[270px] flex-shrink-0 flex flex-col justify-between">
+  <div className="bg-[#FDF4E0] p-6 rounded-xl mr-4 h-[270px] w-[270px] flex-shrink-0 flex flex-col justify-between md:mt-0 mt-[-10px]">
     <p className="text-sm">{content}</p>
     <div className="flex items-center gap-4">
       <img className="w-12 h-12" src="/src/assets/profilepictype.svg" alt={`${author} avatar`} />
@@ -52,7 +52,7 @@ const WhatOurPartners = () => {
 
   return (
     <>
-    <div className='text-center mt-20 mb-14'>
+    <div className='text-center  mb-14 md:mt-0 '>
       <h1 className='text-4xl font-bold'>What Our <span className='text-[#F2B331]'>Partners Say</span> </h1>
       <p className='text-sm mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
     </div>

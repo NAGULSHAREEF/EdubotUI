@@ -113,29 +113,32 @@ const Footer: React.FC = () => {
   </div>
 </div>
 
-        <div className="mt-8 border-t border-gray-500 pt-4 text-gray-400 text-sm lg:translate-y-3">
-          <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 lg:translate-x-16">
-          <div className="flex space-x-2">
-  <a href="#" className="hover:text-white flex items-center">
-    Privacy Policy 
-    <span className="mx-6">|</span>
-  </a>
-  <a href="#" className="hover:text-white flex items-center">
-    Terms and Conditions 
-    <span className="mx-6">|</span>
-  </a>
-  <a href="#" className="hover:text-white flex items-center">
-    Cookie Policy 
-    <span className="mx-6">|</span>
-  </a>
-  <a href="#" className="hover:text-white flex items-center">
-    Acceptable Use Policy
-  </a>
+<div className="mt-8 border-t border-gray-500 pt-4 text-gray-400 text-sm lg:translate-y-3">
+  <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 lg:translate-x-16">
+    <div className="flex flex-col justify-center items-center md:flex-row md:flex-wrap space-y-2 md:space-y-0 md:space-x-2">
+      <div className="flex justify-center sm:justify-start space-x-2">
+        <a href="#" className="hover:text-white w-full sm:w-auto flex justify-center sm:justify-start items-center">
+          Privacy Policy
+          <span className="mx-2 sm:mx-6">|</span>
+        </a>
+        <a href="#" className="hover:text-white w-full sm:w-auto flex justify-center sm:justify-start items-center whitespace-nowrap">
+          Terms and Conditions
+        </a>
+      </div>
+      <div className="flex justify-center sm:justify-start space-x-2">
+        <a href="#" className="hover:text-white w-full sm:w-auto flex justify-center sm:justify-start items-center">
+          Cookie Policy
+          <span className="mx-2 sm:mx-6">|</span>
+        </a>
+        <a href="#" className="hover:text-white w-full sm:w-auto flex justify-center sm:justify-start items-center whitespace-nowrap">
+          Acceptable Use Policy
+        </a>
+      </div>
+    </div>
+    <p className="lg:translate-x-[-150px]">© 2022 Edubot. All rights reserved.</p>
+  </div>
 </div>
-            <p className="lg:translate-x-[-150px]">© 2022 Edubot. All rights reserved.</p>
-            
-          </div>
-        </div>
+
       </footer>
     </div>
   );

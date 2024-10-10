@@ -1,64 +1,76 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import FutureFestButton from '../../Components/FutureFestButton'; // Import the FutureFestButton component
 
 const HeroSection: React.FC = () => {
   
   const navigate = useNavigate();
- 
-  const handleDotClick = (page: string) => {
-    navigate(page);
-  };
-  return (
-    <div className="bg-[#312860] text-white md:w-full overflow-hidden flex flex-col md:flex-row md:h-[600px] h-[880px] rounded-b-3xl"> {/* Changed to flexbox */}
-        <div className="flex flex-col justify-center items-start w-full md:w-1/2 p-4 md:p-20 gap-8 md:translate-y-[100px]"> {/* Centered vertically, left-aligned */}
-          <h3 className="text-sm uppercase tracking-wide font-medium mb-2 translate-y-14 md:translate-y-5"> {/* Added margin-bottom */}
-            #our motive
-          </h3>
-          <h1 className="font-bold leading-tight whitespace-nowrap">
-            <div className="translate-y-7">
-  <span className="block md:hidden text-3xl md:text-5xl ">Prepare Students</span>
-  <span className="block md:hidden text-3xl md:text-5xl ">to <span className="text-yellow-400">Thrive</span>,</span>
-  <span className="block md:hidden text-3xl md:text-5xl"> Not Just Survive.</span>
-  </div>
-  <span className="hidden md:block text-3xl md:text-5xl">Prepare Students to <span className="text-yellow-400">Thrive</span>,</span>
-  <span className="hidden md:block text-3xl md:text-5xl"> Not Just Survive.</span>
-</h1>
-          <p className="text-[24px] mb-4"> {/* Added margin-bottom */}
-            Strengthen student employability with skill<br/> training programs and courses from India's best<br/> growing platform.
-          </p>
-          <div className="flex flex-row gap-4 mb-4"> {/* Added margin-bottom */}
-            <button className="bg-yellow-400 text-[#312860] font-semibold px-4 py-2 rounded-full hover:bg-yellow-500">
-              Contact Us
-            </button>
-            <button className="bg-transparent border border-yellow-400 text-yellow-400 px-4 py-2 rounded-full font-semibold">
-              Know More
-            </button>
-          </div>
-          <div className="justify-center space-x-4 md:translate-x-[10px] md:translate-y-[-10px] hidden md:flex">
-  <button
-    id="dot1"
-    title='facts'
-    className="w-3 h-3 bg-gray-300 rounded-full hover:bg-yellow-400 transition"
-    onClick={() => handleDotClick('#')}
-  />
-  <button
-  title='facts'
-    id="dot2"
-    className="w-3 h-3 bg-gray-300 rounded-full hover:bg-yellow-400 transition"
-    onClick={() => handleDotClick('#')}
-  />
-  <button
-  title='facts'
-    id="dot3"
-    className="w-3 h-3 bg-gray-300 rounded-full hover:bg-yellow-400 transition"
-    onClick={() => handleDotClick('#')}
-  />
-          </div>
 
-    <div className="relative w-full h-48 md:translate-x-[630px] md:translate-y-[-430px] translate-x-[220px] translate-y-[-150px]">
-      <svg width="163" height="165" viewBox="0 0 163 165" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <g clip-path="url(#clip0_1_795)">
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex(prevIndex => (prevIndex === 2 ? 0 : prevIndex + 1));
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
+
+  const handleDotClick = (index) => {
+    setCurrentIndex(index);
+    navigate('#');
+  };
+
+  return (
+    <div className="relative w-full h-full overflow-hidden">
+      <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+        {/* HeroSection */}
+        <div className="min-w-full bg-[#312860] text-white md:w-full overflow-hidden flex flex-col md:flex-row md:h-[500px] h-[750px] rounded-b-3xl">
+          <div className="flex flex-col justify-center items-start w-full md:w-1/2 p-4 md:p-20 gap-8 md:translate-y-[100px]">
+            <h3 className="text-sm uppercase tracking-wide font-medium mb-2 translate-y-14 md:translate-y-5">
+              #our motive
+            </h3>
+            <h1 className="font-bold leading-tight whitespace-nowrap">
+              <div className="translate-y-7">
+                <span className="block md:hidden text-3xl md:text-5xl">Prepare Students</span>
+                <span className="block md:hidden text-3xl md:text-5xl">to <span className="text-yellow-400">Thrive</span>,</span>
+                <span className="block md:hidden text-3xl md:text-5xl"> Not Just Survive.</span>
+              </div>
+              <span className="hidden md:block text-3xl md:text-5xl">Prepare Students to <span className="text-yellow-400">Thrive</span>,</span>
+              <span className="hidden md:block text-3xl md:text-5xl"> Not Just Survive.</span>
+            </h1>
+            <p className="md:text-[24px] text-[18px] mb-4 md:-mt-3">
+              Strengthen student employability with skill<br className=" hidden md:block " /> training programs and courses from India's best<br className=" hidden md:block "  /> growing platform.
+            </p>
+            <div className="flex flex-row gap-4 mb-4 md:-mt-0 -mt-8">
+              <button className="bg-yellow-400 text-[#312860] font-semibold px-4 py-2 rounded-full hover:bg-yellow-500">
+                Contact Us
+              </button>
+              <button className="bg-transparent border border-yellow-400 text-yellow-400 px-4 py-2 rounded-full font-semibold">
+                Know More
+              </button>
+            </div>
+            <div className="justify-center space-x-4 md:translate-x-[10px] md:translate-y-[-10px] hidden md:flex">
+              <button
+                id="dot1"
+                title="facts"
+                className={`w-3 h-3 ${currentIndex === 0 ? 'bg-yellow-400' : 'bg-gray-300'} rounded-full hover:bg-yellow-400 transition`}
+                onClick={() => handleDotClick(0)}
+              />
+              <button
+                id="dot2"
+                title="facts"
+                className={`w-3 h-3 ${currentIndex === 1 ? 'bg-yellow-400' : 'bg-gray-300'} rounded-full hover:bg-yellow-400 transition`}
+                onClick={() => handleDotClick(1)}
+              />
+              <button
+                id="dot3"
+                title="facts"
+                className={`w-3 h-3 ${currentIndex === 2 ? 'bg-yellow-400' : 'bg-gray-300'} rounded-full hover:bg-yellow-400 transition`}
+                onClick={() => handleDotClick(2)}
+              />
+            </div>
+            <div className="relative w-full h-48 md:translate-x-[630px] md:translate-y-[-430px] translate-x-[220px] translate-y-[-150px]">
+              <svg width="163" height="165" viewBox="0 0 163 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_1_795)">
 <path d="M148.526 130.864C149.912 130.65 150.962 130.493 152.358 130.278C153.285 128.21 154.389 125.781 155.461 123.338C156.03 122.041 156.841 121.14 158.332 121.845C159.711 122.496 159.606 123.639 159.055 124.872C156.807 129.871 154.592 134.883 152.282 140.083C148.168 136.004 144.184 132.066 140.221 128.1C139.31 127.188 139.287 125.988 140.309 125.356C140.945 124.96 142.367 124.984 142.912 125.443C144.957 127.161 146.782 129.142 148.526 130.864Z" fill="white" fill-opacity="0.6"/>
 <path d="M146.698 124.114C146.529 123.259 146.099 122.349 146.26 121.567C146.431 120.731 147.012 119.651 147.705 119.361C148.203 119.15 149.632 119.898 149.844 120.504C150.547 122.483 151.018 124.574 151.29 126.665C151.362 127.237 150.46 128.422 149.929 128.471C149.222 128.534 148.154 127.934 147.763 127.297C147.199 126.383 147.098 125.178 146.797 124.099C146.762 124.101 146.733 124.107 146.698 124.114Z" fill="white" fill-opacity="0.6"/>
 <path d="M86.736 41.7436C86.4452 40.0963 87.867 38.8549 89.2927 39.5115C91.1508 40.3683 92.9714 41.3704 94.6417 42.5401C95.1514 42.8984 95.4438 44.1166 95.2446 44.7585C95.0789 45.2864 93.8228 46.0255 93.4296 45.8431C91.2429 44.8472 89.1617 43.611 87.0686 42.4179C86.8509 42.2977 86.7996 41.8842 86.736 41.7436Z" fill="white" fill-opacity="0.6"/>
