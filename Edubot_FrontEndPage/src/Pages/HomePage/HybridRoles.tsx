@@ -41,7 +41,7 @@ const HybridRoles: React.FC = () => {
         
           <div className="flex justify-center md:justify-end">
             <img
-              src="/src/assets/study.svg"
+              src="/src/assets/Group 1171277752.png"
               alt="Hybrid roles"
               className="max-w-full h-auto rounded-3xl"
             />

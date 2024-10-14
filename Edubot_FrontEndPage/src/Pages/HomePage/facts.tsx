@@ -9,7 +9,7 @@ const features = [
 
 const facts: React.FC = () => {
   return (
-    <div className="container mx-auto px-4 py-8 text-center mb-10">
+    <div className=" bg-[url('/src/assets/factsimage.png')] bg-cover bg-center bg-no-repeat container mx-auto px-4 py-8 text-center mb-[50px]">
       <h2 className="text-2xl md:text-4xl font-bold text-black">
          <span className="text-yellow-500">Dive into intriguing facts</span> and <br /> discover why we’re your best choice
       </h2>
