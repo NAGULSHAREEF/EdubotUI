@@ -52,7 +52,7 @@ const WhatOurPartners = () => {
 
   return (
     <>
-    <div className='text-center  mb-14 md:mt-0 '>
+    <div className='text-center  mb-14 md:mt-0 -mt-20 '>
       <h1 className='text-4xl font-bold'>What Our <span className='text-[#F2B331]'>Partners Say</span> </h1>
       <p className='text-sm mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
     </div>

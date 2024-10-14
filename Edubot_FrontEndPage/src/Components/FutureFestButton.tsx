@@ -9,6 +9,10 @@ import Event4Image from "../assets/Event5.png";
 import Event5Image from "../assets/Event6.png";
 import Event6Image from "../assets/Event5.png";
 import Event7Image from "../assets/Event7.png";
+import InstagramIcon from "../assets/instagram.svg";
+import FacebookIcon from "../assets/Facebook.svg";
+import LinkedInIcon from "../assets/Linkedin.svg";
+import WhatsappIcon from "../assets/Whatsapp.svg"
 
 interface EventCard {
   title: string;
@@ -67,18 +71,56 @@ const FutureFestButton: React.FC = () => {
 
   return (
     <>
-      <button
-        onClick={() => setShowFutureFest(true)}
-        className="fixed w-[59px] h-[133px] bg-[#312860] rounded-l-[12px] flex flex-col items-center justify-center shadow-[0px_4px_25px_0px_#31286029] border border-[#312860] transition-all duration-300 hover:bg-[#3e3277] z-50"
-        style={{
-          top: '50%',
-          right: '0',
-          transform: 'translateY(-50%)'
-        }}
-        aria-label="Future Fest"
-      >
-        <span className="text-white font-helvetica text-base sm:text-lg md:text-xl -rotate-90 whitespace-nowrap">What's New</span>
-      </button>
+    
+     
+
+      {/* Floating buttons */}
+    <div className="fixed top-1/2 md:py-60 md:px-96 md:translate-x-[520px] py-72 px-4  left-0   flex flex-col items-start space-y-5 z-50">
+      <div className="flex flex-col items-end space-y-5 w-[24px] h-[112px]">
+        
+        <a
+          href="#"
+          className="w-9 h-9 flex justify-items-end justify-center translate-x-96 transition-transform duration-300 hover:scale-110"
+          aria-label="Whatsapp"
+        >
+          <img src={WhatsappIcon} alt="Whatsapp" className="w-full h-full" />
+        </a>
+      </div>
+      </div>
+      <div className="fixed top-1/2  -translate-y-1/2 right-0  flex flex-col items-end space-y-5 z-50">
+        <div className="flex flex-col items-center space-y-5 w-[24px] h-[112px]">
+        
+          <a
+            href="#"
+            className="w-6 h-6 flex items-center justify-center transition-transform -ml-6 duration-300 hover:scale-110"
+            aria-label="Instagram"
+          >
+            <img src={InstagramIcon} alt="Instagram" className="w-full h-full" />
+          </a>
+          <a
+            href="#"
+            className="w-6 h-6 flex items-center justify-center transition-transform -ml-6 duration-300 hover:scale-110"
+            aria-label="Facebook"
+          >
+            <img src={FacebookIcon} alt="Facebook" className="w-full h-full" />
+          </a>
+          <a
+            href="#"
+            className="w-6 h-6 flex items-center justify-center -ml-6 transition-transform duration-300 hover:scale-110"
+            aria-label="LinkedIn"
+          >
+            <img src={LinkedInIcon} alt="LinkedIn" className="w-full h-full" />
+          </a>
+          
+        </div>
+        <button
+          onClick={() => setShowFutureFest(true)}
+          className="w-[59px] h-[133px] bg-[#1D1D1D] rounded-l-[12px] flex flex-col items-center justify-center shadow-[0px_4px_25px_0px_#31286029] border border-[#1D1D1D] transition-all duration-300 hover:bg-[#1D1D1D]"
+          aria-label="What's New"
+        >
+          <span className="text-white font-helvetica text-base sm:text-lg md:text-xl -rotate-90 whitespace-nowrap">What's New</span>
+        </button>
+      </div>
 
       {showFutureFest && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
@@ -186,10 +228,61 @@ const FutureFestButton: React.FC = () => {
                 </div>
               )}
             </div>
+
+            
+            {/* Floating buttons */}
+    <div className="fixed top-1/2 md:py-60 md:px-6 py-72 px-4  left-0   flex flex-col items-start space-y-5 z-50">
+      <div className="flex flex-col items-start space-y-5 w-[24px] h-[112px]">
+        
+        <a
+          href="#"
+          className="w-9 h-9 flex items-center justify-center transition-transform duration-300 hover:scale-110"
+          aria-label="Whatsapp"
+        >
+          <img src={WhatsappIcon} alt="Whatsapp" className="w-full h-full" />
+        </a>
+      </div>
+      </div>
+      <div className="fixed top-1/2  -translate-y-1/2 right-0  flex flex-col items-end space-y-5 z-50">
+        <div className="flex flex-col items-center space-y-5 w-[24px] h-[112px]">
+        
+          <a
+            href="#"
+            className="w-6 h-6 flex items-center justify-center transition-transform -ml-6 duration-300 hover:scale-110"
+            aria-label="Instagram"
+          >
+            <img src={InstagramIcon} alt="Instagram" className="w-full h-full" />
+          </a>
+          <a
+            href="#"
+            className="w-6 h-6 flex items-center justify-center transition-transform -ml-6 duration-300 hover:scale-110"
+            aria-label="Facebook"
+          >
+            <img src={FacebookIcon} alt="Facebook" className="w-full h-full" />
+          </a>
+          <a
+            href="#"
+            className="w-6 h-6 flex items-center justify-center -ml-6 transition-transform duration-300 hover:scale-110"
+            aria-label="LinkedIn"
+          >
+            <img src={LinkedInIcon} alt="LinkedIn" className="w-full h-full" />
+          </a>
+          
+        </div>
+        <button
+          onClick={() => setShowFutureFest(true)}
+          className="w-[59px] h-[133px] bg-[#1D1D1D] rounded-l-[12px] flex flex-col items-center justify-center shadow-[0px_4px_25px_0px_#31286029] border border-[#312860] transition-all duration-300 hover:bg-[#3e3277]"
+          aria-label="What's New"
+        >
+          <span className="text-white font-helvetica text-base sm:text-lg md:text-xl -rotate-90 whitespace-nowrap">What's New</span>
+        </button>
+      </div>
           </div>
         </div>
       )}
     </>
+
+    
   );
 };
 

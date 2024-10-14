@@ -4,7 +4,7 @@ import { ChevronRight } from 'lucide-react';
 
 const HybridRoles: React.FC = () => {
   return (
-    <section className="py-8 px-4 md:px-8 lg:px-16">
+    <section className="py-2 px-4 md:px-8 lg:px-16">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">        
           <div className="text-left space-y-4">

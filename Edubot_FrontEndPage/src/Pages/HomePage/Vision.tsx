@@ -6,14 +6,14 @@ const Vision: React.FC = () => {
     <div className="container mx-auto px-4 py-8 overflow-hidden md:max-h-[600px] ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="space-y-6 md:translate-y-[-100px]">
-          <h3 className="text-md font-semibold text-gray-500 uppercase">#our vision</h3>
+          <h3 className="text-md font-bold text-[#17174D] uppercase">#our vision</h3>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
             We are <span className="text-yellow-500">partner</span> in your learning journey
           </h1>
-          <p className="text-gray-700">
+          <p className="text-[#333333]">
             Strengthen student employability with skill training programs and courses from India's best growing platform.
           </p>
-          <ul className="space-y-2 text-gray-600">
+          <ul className="space-y-2 text-[#333333]">
   <li className="flex items-center">
     <span className="bg-[#FEF7EA] rounded-full p-1 mr-2">
       <Check className="text-[#F2B331]" size={24} />
@@ -33,7 +33,7 @@ const Vision: React.FC = () => {
     Language customizations for practical learning
   </li>
 </ul>
-          <button className="bg-yellow-500 flex text-white py-2 px-4 rounded-3xl hover:bg-yellow-600">
+          <button className="bg-yellow-500 flex text-black font-semibold  py-2 px-4 rounded-3xl hover:bg-yellow-600">
             Become partner with us
             <ChevronRight size={15} className="ml-2 mt-1.5" />
           </button>

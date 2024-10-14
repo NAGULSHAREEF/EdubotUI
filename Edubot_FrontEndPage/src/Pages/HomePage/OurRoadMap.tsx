@@ -20,7 +20,7 @@ const OurRoadMap: React.FC = () => {
             alt="Advanced Student Portal"
             className="mx-auto mb-4 w-24"
           />
-          <h3 className="text-xl font-semibold">Advanced<br/> Student Portal</h3>
+          <h3 className="text-xl font-semibold text-[#17174d] ">Advanced<br/> Student Portal</h3>
           <div className="relative w-[250px] h-2 flex items-center md:translate-x-[260px] md:translate-y-[-50px]">
             <div className="hidden md:block w-full border-t-2 border-dashed border-yellow-500"></div>
             <div className="hidden md:block absolute left-0 h-4 w-4 bg-yellow-500 rounded-full"></div>
@@ -39,7 +39,7 @@ const OurRoadMap: React.FC = () => {
             alt="Advanced Learning Management System"
             className="mx-auto mb-4 w-[130px]"
           />
-          <h3 className="text-xl font-semibold">Advanced Learning<br/> Management Systems (LMS)</h3>
+          <h3 className="text-xl font-semibold text-[#17174d]">Advanced Learning<br/> Management Systems (LMS)</h3>
         </div>
 
         
@@ -49,7 +49,7 @@ const OurRoadMap: React.FC = () => {
             alt="Analytic TPO Dashboard"
             className="mx-auto mb-4 w-[120px]"
           />
-          <h3 className="text-xl font-semibold">Analytic TPO<br/> Dashboard</h3>
+          <h3 className="text-xl font-semibold text-[#17174d]">Analytic TPO<br/> Dashboard</h3>
           <div className="relative w-[250px] h-2 flex items-center md:translate-x-[-120px] md:translate-y-[-70px]">
   <div className="w-full border-t-2 border-dashed border-yellow-500 md:block hidden"></div>
   <div className="absolute left-0 h-4 w-4 bg-yellow-500 rounded-full md:block hidden"></div>

@@ -138,21 +138,21 @@ const Services: React.FC = () => {
         <div className="mt-6 flex md:bg-[#fff] md:shadow-lg  flex-row justify-center items-center space-x-0 md:space-x-4">
         <button
           onClick={() => handleSectionChange('internships', 'src/assets/services1.png')}
-          className={`flex items-center font-semibold px-[4px] py-[11px] md:px-6 md:py-2 md:text-[18px] text-[10px] whitespace-nowrap ${activeSection === 'internships' ? 'bg-[#1D1F71] text-white' : 'bg-white text-[#333333]'} ${activeSection !== 'internships' && 'mr-[-1px]'}`}
+          className={`flex items-center rounded-full font-semibold px-[4px] py-[11px] md:px-6 md:py-2 md:text-[18px] text-[10px] whitespace-nowrap ${activeSection === 'internships' ? 'bg-[#1D1F71] text-white' : 'bg-white text-[#333333]'} ${activeSection !== 'internships' && 'mr-[-1px]'}`}
         >
           {activeSection === 'internships' && <span className="w-2 h-2 bg-[#F2B331] mr-2"></span>}
           Join for Internships
         </button>
         <button
           onClick={() => handleSectionChange('courses', 'src/assets/services1.png')}
-          className={`flex items-center font-semibold px-4 py-2 md:px-6 md:py-2 md:text-[18px] text-[10px] whitespace-nowrap md:whitespace-normal ${activeSection === 'courses' ? 'bg-[#1D1F71] text-white' : 'bg-white text-[#333333]'} ${activeSection !== 'courses' && 'mr-[-1px]'}`}
+          className={`flex items-center rounded-full font-semibold px-4 py-2 md:px-6 md:py-2 md:text-[18px] text-[10px] whitespace-nowrap md:whitespace-normal ${activeSection === 'courses' ? 'bg-[#1D1F71] text-white' : 'bg-white text-[#333333]'} ${activeSection !== 'courses' && 'mr-[-1px]'}`}
         >
           {activeSection === 'courses' && <span className="w-2 h-2 bg-[#F2B331] rounded-full mr-2"></span>}
           Skill Oriented Courses (soc)
         </button>
         <button
           onClick={() => handleSectionChange('incubation', 'src/assets/services1.png')}
-          className={`flex items-center font-semibold px-4 py-2 md:px-6 md:py-2 md:text-[18px] text-[10px] ${activeSection === 'incubation' ? 'bg-[#1D1F71] text-white' : 'bg-white text-[#333333]'} whitespace-nowrap md:whitespace-normal ${activeSection !== 'incubation' && 'mr-[-1px]'}`}
+          className={`flex items-center rounded-full font-semibold px-4 py-2 md:px-6 md:py-2 md:text-[18px] text-[10px] ${activeSection === 'incubation' ? 'bg-[#1D1F71] text-white' : 'bg-white text-[#333333]'} whitespace-nowrap md:whitespace-normal ${activeSection !== 'incubation' && 'mr-[-1px]'}`}
         >
           {activeSection === 'incubation' && <span className="w-2 h-2 bg-[#F2B331] rounded-full mr-2"></span>}
           Incubation Centre
@@ -161,7 +161,7 @@ const Services: React.FC = () => {
       </div>
 
       {/* Bottom Section with Growing Card Content */}
-      <div className="container mx-auto px-4 py-16 bg-[#F2B33126] rounded-tl-3xl rounded-br-3xl md:h-auto md:translate-y-[-20px]">
+      <div className="container mx-auto px-4 py-16 bg-[#F2B33126] rounded-tl-3xl rounded-br-3xl md:h-auto md:translate-y-[-10px]">
         <div className="flex flex-col md:flex-row items-center justify-between">
           
           {activeSection === 'internships' && (

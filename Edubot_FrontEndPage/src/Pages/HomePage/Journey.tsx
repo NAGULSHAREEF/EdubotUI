@@ -9,7 +9,7 @@ const Journey: React.FC = () => {
           {/* Text Content */}
           <div className="text-left space-y-4 md:translate-x-20">
             <h1 className="text-2xl md:text-3xl  font-bold">
-              <span className="">Enrich Your Learning Journey With</span> <span className="text-yellow-400 "> Edubot's AI-Driven Power</span>
+              <span className="">Enrich Your Learning Journey <br/> With</span> <span className="text-yellow-400 "> Edubot's AI-Driven Power</span>
             </h1>
             <p className="text-[#344857] text-[20px]"> Premium features that inspires students and faculties</p>
             <ul className="space-y-2">

@@ -52,7 +52,7 @@ export default function Component() {
             </p>
             
           </div> 
-          <div className='order-3 sm:order-3 sm:ml-20 sm:mb-10 mb-4 md:ml-0 ml-[30px]'>
+          <div className='order-3 sm:order-3 sm:ml-20 sm:mb-10 mb-4 md:ml-16 ml-[30px]'>
           <button className="rounded-full flex flex-row bg-yellow-500 px-6 py-3 font-semibold text-indigo-900 hover:bg-yellow-400 transition-colors duration-200">
               Read blogs to know more <span><ChevronRight className="ml-2 mt-[5px] h-4 w-4 text-[20px]" /></span>
             </button>
@@ -105,7 +105,7 @@ export default function Component() {
     </div>
     <div className='flex flex-col items-center gap-10 mt-4 sm:flex-row sm:ml-10 sm:gap-10'>
       <div className='mt-[-60px] mb-4 sm:mb-0'>
-        <blockquote className="w-[300px] text-xl text-[#ffffff] mx-auto sm:mx-0 md:translate-x-[50px] md:ml-0 ml-20">
+        <blockquote className="w-[300px] text-xl text-[#ffffff] mx-auto sm:mx-0 md:translate-x-[30px] translate-x-[-20px] md:ml-0 ml-14">
           "{slides[currentSlide].quote}"
         </blockquote>
         <cite className="text-2xl font-bold text-center sm:text-left">{slides[currentSlide].author}</cite>
