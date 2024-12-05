@@ -1,13 +1,25 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import InternshipsAndTrainingRoute from './Pages/InternshipsAndTrainings/InternshipsAndTrainingRoute/InternshipsAndTrainingRoute.tsx'
+import HomePageRoute from './Pages/HomePage/HomePageRoute/HomePageRoute.tsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    children: [
+      {
+        path: 'internshipsandtrainings',
+        element: <InternshipsAndTrainingRoute />,
+      },
+      {
+        path: '/',
+        element: <HomePageRoute />,
+      },
+    ],
   },
 ])
 

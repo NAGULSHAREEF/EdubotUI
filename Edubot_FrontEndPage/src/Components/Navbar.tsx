@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const handleMenuToggle = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex space-x-6 lg:translate-x-80 order-2 md:order-1">
             <a href="#about" className="hover:text-[#F2B331]">About Us</a>
-            <a href="#services" className="hover:text-[#F2B331]">Our Services</a>
+            <Link to="/internshipsandtrainings" className="hover:text-[#F2B331]">Our Services</Link>
             <a href="#updates" className="hover:text-[#F2B331]">Latest updates</a>
           </div>
           <div className="order-3 md:order-2">
@@ -32,7 +32,7 @@ const Navbar = () => {
           <div className={`absolute top-16 left-0 w-full md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
             <div className="bg-white w-full p-4 shadow-lg flex flex-col items-start space-y-4 z-10">
               <a href="#about" className="hover:text-[#F2B331] w-full">About Us</a>
-              <a href="#services" className="hover:text-[#F2B331] w-full">Our Services</a>
+              <Link to="/internships-and-trainings" className="hover:text-[#F2B331] w-full">Our Services</Link>
               <a href="#updates" className="hover:text-[#F2B331] w-full">Latest updates</a>
             </div>
           </div>
