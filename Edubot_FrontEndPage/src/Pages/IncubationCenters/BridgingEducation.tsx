@@ -15,7 +15,7 @@ const BenefitSection = ({
 }: BenefitSectionProps) => {
   return (
     <div className="w-full mx-auto mb-16">
-      {/* Desktop Layout */}
+     
       <div className="hidden lg:grid grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
         {isImageRight ? (
           <>
@@ -49,7 +49,7 @@ const BenefitSection = ({
         )}
       </div>
 
-      {/* Mobile and Tablet Layout */}
+   
       <div className="lg:hidden px-4 max-w-2xl mx-auto">
         <img
           src={imageUrl}

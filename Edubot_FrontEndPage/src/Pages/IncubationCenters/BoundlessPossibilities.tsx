@@ -117,16 +117,16 @@ export default function ProcessTimeline() {
               key={step.number}
               className={`flex-shrink-0 w-48 relative ${
                 index % 2 === 1 ? "mt-20" : ""
-              }`} // Offset for 2nd and 4th circles
+              }`}
             >
               <ProcessStep step={step} />
             </div>
           ))}
-          {/* Dashed connecting lines */}
+      
          
         </div>
 
-        {/* Tablet and Mobile Layout - Vertical */}
+      
         <div className="lg:hidden  space-y-4  mt-12  max-w-44 mx-auto">
           {steps.map((step) => (
             <div key={step.number} className="relative">
