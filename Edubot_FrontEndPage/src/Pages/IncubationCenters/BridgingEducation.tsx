@@ -4,6 +4,7 @@ interface BenefitSectionProps {
   imageUrl: string;
   imageAlt: string;
   isImageRight?: boolean;
+  index: number;
 }
 
 const BenefitSection = ({
@@ -12,25 +13,28 @@ const BenefitSection = ({
   imageUrl,
   imageAlt,
   isImageRight = true,
+  index,
 }: BenefitSectionProps) => {
-  return (
-    <div className="w-full mx-auto mb-16">
-     
+  return (  
+    <div className="w-full mx-auto mb-12">
       <div className="hidden lg:grid grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
         {isImageRight ? (
           <>
-            <div className="pr-12">
-              <h2 className="text-[#1E1B4B] text-3xl lg:text-5xl font-bold mb-6">{title}</h2>
-              <p className="text-gray-600 text-base lg:text-lg leading-relaxed">{description}</p>
+            <div className="pr-12 ">
+              <h2 className="text-[#1E1B4B] text-3xl lg:text-5xl font-bold mb-2 lg:leading-[54px]"> {title}</h2>
+              <p className="text-gray-600 text-base lg:text-xl leading-normal lg:mb-16">{description}</p>
             </div>
             <div className="flex justify-end">
               <img
                 src={imageUrl}
                 alt={imageAlt}
-                className="w-full max-w-[600px] h-[300px] object-cover rounded-lg shadow-lg"
+                className={`w-full ${
+                  index === 0
+                    ? "max-w-[600px] h-[390px] -lg:mb-42"
+                    : "max-w-[520px] h-[280px] "
+                } object-cover rounded-lg `}
               />
             </div>
-          
           </>
         ) : (
           <>
@@ -38,23 +42,23 @@ const BenefitSection = ({
               <img
                 src={imageUrl}
                 alt={imageAlt}
-                className="w-full max-w-[600px] h-[350px] object-cover rounded-lg shadow-lg"
+                className="w-full max-w-[600px] h-[350px] object-cover rounded-lg"
               />
             </div>
             <div className="pl-12 mb-40 ">
               <h2 className="text-[#1E1B4B] text-3xl lg:text-5xl font-bold mb-4 ">{title}</h2>
-              <p className="text-gray-600 text-base lg:text-lg  leading-relaxed">{description}</p>
+              <p className="text-gray-600 text-base lg:text-lg  leading-relaxed ">{description}</p>
             </div>
           </>
         )}
       </div>
 
-   
+      {/* Mobile and Tablet Layout */}
       <div className="lg:hidden px-4 max-w-2xl mx-auto">
         <img
           src={imageUrl}
           alt={imageAlt}
-          className="w-full h-[300px] object-cover rounded-lg shadow-lg mb-6"
+          className="w-full h-[300px] object-cover rounded-lg  mb-12"
         />
         <div className="space-y-4">
           <h2 className="text-[#1E1B4B] text-2xl font-bold">{title}</h2>
@@ -103,6 +107,7 @@ export default function EducationBenefits() {
           imageUrl={benefit.imageUrl}
           imageAlt={benefit.imageAlt}
           isImageRight={benefit.isImageRight}
+          index={index}
         />
       ))}
     </div>

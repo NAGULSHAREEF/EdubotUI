@@ -16,20 +16,20 @@ const steps: ProcessStep[] = [
   },
   {
     number: 2,
-    title: "Training",
-    imageUrl: "./src/assets/Training.png",
+    title:  "Training ",
+    imageUrl: "./src/assets/trainig.png",
     bgColor: "bg-[#FFFFFF]",
   },
   {
     number: 3,
     title: "Real Projects",
-    imageUrl: "./src/assets/Real Project.png",
+    imageUrl: "./src/assets/Ranking.png",
     bgColor: "bg-[#FFFFFF]",
   },
   {
     number: 4,
-    title: "Endorsements",
-    imageUrl: "./src/assets/endorsements.png",
+    title: "Enhancement",
+    imageUrl: "./src/assets/enhancement.png",
     bgColor: "bg-[#FFF7ED]",
   },
 ];
@@ -40,20 +40,21 @@ function ProcessStep({ step }: { step: ProcessStep }) {
 
   return (
     <div
-      className={`relative ${step.bgColor} rounded-full p-4 sm:p-6 lg:p-8 flex flex-col items-center justify-center aspect-square border-2 transition-transform hover:scale-105`}
+      className={`relative ${step.bgColor}  rounded-full p-4 sm:p-6 lg:p-8 flex flex-col items-center justify-center aspect-square border-2 transition-transform hover:scale-105`}
       style={{ borderColor }}
     >
-      <div className="absolute top-8 left-[20px] -translate-x-1/2 -translate-y-1/2 w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-white border-2 border-gray-200 flex items-center justify-center text-xs sm:text-sm font-semibold">
+      <div className="absolute top-12 left-[20px] -translate-x-1/2 -translate-y-1/2 w-10 h-10 sm:w-10 sm:h-10 rounded-full bg-white border-2 border-black  flex items-center justify-center text-xs sm:text-lg font-bold">
         {step.number}
       </div>
       <img
         src={step.imageUrl}
         alt={step.title}
-        width={64}
-        height={64}
-        className="w-20 h-20 sm:w-12 sm:h-12 lg:w-24 lg:h-24 mb-2 lg:mb-4 object-contain"
+        width={160}
+        height={160}
+        className="w-20 h-20 sm:w-12 sm:h-12 lg:w-32 lg:h-32 mb-2 lg:mb-0 lg:-mt-5  object-contain"
+
       />
-      <h3 className="text-center text-xs sm:text-sm lg:text-[12px] font-semibold">
+      <h3 className="text-center text-xs text-[#17174D]  -lg:-mt-2 sm:text-sm lg:text-[20px] font-bold">
         {step.title}
       </h3>
     </div>
@@ -71,11 +72,12 @@ function ConnectingLine() {
 
 function SectionTitle({ children }: { children: ReactNode }) {
   return (
-    <div className="text-center -mb-4 max-w-6xl mx-auto px-4">
-      <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-[#17174D] mb-4">
-        Where Learning Meets Boundless Possibilities.
+    <div className="text-center -mt-3 max-w-6xl mx-auto px-4 ">
+
+      <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-[#17174D]">
+        Where Learning Meets Boundless Possibilities
       </h2>
-      <p className="text-sm sm:text-base lg:text-2xl text-gray-600">
+      <p className="text-sm sm:text-base lg:text-2xl mt-11 text-gray-600">
         {children}
       </p>
     </div>
@@ -84,7 +86,7 @@ function SectionTitle({ children }: { children: ReactNode }) {
 
 export default function ProcessTimeline() {
   return (
-    <section className="py-16 px-4 sm:px-6  lg:px-8">
+    <section className="py-16 px-4 sm:px-6  lg:mb-4 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <SectionTitle>
           Because education must evolve to meet industry needs. Our incubation
@@ -95,7 +97,7 @@ export default function ProcessTimeline() {
         </SectionTitle>
 
         {/* Desktop Layout - Adjusted Horizontal with offset circles */}
-        <div className="hidden lg:flex items-center justify-between relative">
+        <div className="hidden lg:flex  items-center justify-between relative max-w-7xl">
         <div className="absolute w-72 rotate-12 left-10  top-1/2 -translate-y-1/2 flex items-center justify-between ">
             {steps.slice(0, steps.length - 1).map((_, index) => (
               <ConnectingLine key={index} />
@@ -115,7 +117,7 @@ export default function ProcessTimeline() {
           {steps.map((step, index) => (
             <div
               key={step.number}
-              className={`flex-shrink-0 w-48 relative ${
+              className={`flex-shrink-0 w-60 relative ${
                 index % 2 === 1 ? "mt-20" : ""
               }`}
             >
@@ -127,7 +129,7 @@ export default function ProcessTimeline() {
         </div>
 
       
-        <div className="lg:hidden  space-y-4  mt-12  max-w-44 mx-auto">
+        <div className="lg:hidden  space-y-4  mt-12  max-w-40    mx-auto">
           {steps.map((step) => (
             <div key={step.number} className="relative">
               <ProcessStep step={step} />
