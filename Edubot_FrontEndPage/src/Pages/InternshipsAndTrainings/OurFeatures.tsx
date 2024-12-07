@@ -233,10 +233,3 @@ export default function Features() {
     </div>
   )
 }
-
-{/* Decorative Stars */}
-          {/* <div className="absolute top-16 w-9 h-9 md:w-full md:h-full left-5 md:top-[450px] md:left-20 text-white text-2xl"><img src="/src/assets/diamonds.png"/></div>
-            <div className="absolute -top-2 left-20 w-9 h-9 md:w-full md:h-full md:top-20 md:left-32 text-white text-2xl"><img src="/src/assets/diamonds.png"/></div>
-            <div className="absolute top-5 right-16 w-9 h-9 md:w-full md:h-full md:top-44 md:left-[500px] text-white text-2xl"><img src="/src/assets/diamonds.png"/></div>
-            <div className="absolute top-20 right-2 w-9 h-9 md:w-full md:h-full md:top-[400px] md:left-[530px] text-white text-2xl"><img src="/src/assets/diamonds.png"/></div>
-          </div> */}
