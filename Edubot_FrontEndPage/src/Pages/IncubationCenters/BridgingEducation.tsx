@@ -1,115 +1,160 @@
-interface BenefitSectionProps {
-  title: string;
-  description: string;
-  imageUrl: string;
-  imageAlt: string;
-  isImageRight?: boolean;
-  index: number;
-}
+'use client'
 
-const BenefitSection = ({
-  title,
-  description,
-  imageUrl,
-  imageAlt,
-  isImageRight = true,
-  index,
-}: BenefitSectionProps) => {
-  return (  
-    <div className="w-full mx-auto mb-12">
-      <div className="hidden lg:grid grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
-        {isImageRight ? (
-          <>
-            <div className="pr-12 ">
-              <h2 className="text-[#1E1B4B] text-3xl lg:text-5xl font-bold mb-2 lg:leading-[54px]"> {title}</h2>
-              <p className="text-gray-600 text-base lg:text-xl leading-normal lg:mb-16">{description}</p>
-            </div>
-            <div className="flex justify-end">
-              <img
-                src={imageUrl}
-                alt={imageAlt}
-                className={`w-full ${
-                  index === 0
-                    ? "max-w-[600px] h-[390px] -lg:mb-42"
-                    : "max-w-[520px] h-[280px] "
-                } object-cover rounded-lg `}
-              />
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="flex justify-start">
-              <img
-                src={imageUrl}
-                alt={imageAlt}
-                className="w-full max-w-[600px] h-[350px] object-cover rounded-lg"
-              />
-            </div>
-            <div className="pl-12 mb-40 ">
-              <h2 className="text-[#1E1B4B] text-3xl lg:text-5xl font-bold mb-4 ">{title}</h2>
-              <p className="text-gray-600 text-base lg:text-lg  leading-relaxed ">{description}</p>
-            </div>
-          </>
-        )}
-      </div>
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaPhone } from 'react-icons/fa'
 
-      {/* Mobile and Tablet Layout */}
-      <div className="lg:hidden px-4 max-w-2xl mx-auto">
-        <img
-          src={imageUrl}
-          alt={imageAlt}
-          className="w-full h-[300px] object-cover rounded-lg  mb-12"
-        />
-        <div className="space-y-4">
-          <h2 className="text-[#1E1B4B] text-2xl font-bold">{title}</h2>
-          <p className="text-gray-600 leading-relaxed">{description}</p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default function EducationBenefits() {
-  const benefits = [
-    {
-      title: "Bridging Education and Industry for Future-Ready Leaders",
-      description:
-        "Bridging academia and industry equips graduates with practical skills and real-world experience, preparing them to excel in job market. By integrating education with industry needs, we create future-ready professionals. This collaboration turns academic knowledge into career success.",
-      imageUrl: "./src/assets/Vision1.png",
-      imageAlt: "Business meeting with Vision banner",
-      isImageRight: true,
-    },
-    {
-      title: "Benefits to students",
-      description:
-        "Bridging academia and industry equips graduates with practical skills and real-world experience. By integrating them into today's job market, we prepare future-ready professionals. This collaboration turns academic knowledge into career success.",
-      imageUrl: "./src/assets/benefits2.png",
-      imageAlt: "Happy students on campus",
-      isImageRight: false,
-    },
-    {
-      title: "Benefits to College",
-      description:
-        "Bridging academia and industry equips graduates with practical skills and real-world experience. By integrating education with industry needs, we create future-ready professionals. This collaboration turns academic knowledge into career success.",
-      imageUrl: "./src/assets/ClgBenefits3.png",
-      imageAlt: "Aerial view of college campus",
-      isImageRight: true,
-    },
-  ];
+export default function ContactForm() {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    // Handle form submission
+  }
 
   return (
-    <div className="py-12 bg-white">
-      {benefits.map((benefit, index) => (
-        <BenefitSection
-          key={index}
-          title={benefit.title}
-          description={benefit.description}
-          imageUrl={benefit.imageUrl}
-          imageAlt={benefit.imageAlt}
-          isImageRight={benefit.isImageRight}
-          index={index}
-        />
-      ))}
+    <div className="min-h-screen bg-cover bg-center py-12 px-4 sm:px-6 lg:px-8 relative" style={{ backgroundImage: `url('/src/assets/Getintouchbg.png')` }}>
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-center text-3xl lg:text-4xl font-bold text-[#17174D] mb-8">Get in touch</h1>
+
+        <div className="overflow-hidden border-4  rounded-lg">
+          {/* Header Section */}
+          <div className="bg-[#17174D] text-white p-6 lg:grid lg:grid-cols-3 lg:gap-8 relative">
+            <div className="mb-6 lg:mb-0">
+              <h2 className="text-xl font-semibold mb-2 text-yellow-400">Contact information</h2>
+              <p className="text-sm text-gray-300">Fill up the form and our team will get in touch with you within 24 hours.</p>
+            </div>
+            <div className="mb-6 lg:mb-0">
+              <h2 className="text-xl font-semibold mb-2 text-yellow-400">Email ID:</h2>
+              <p className="text-sm text-gray-300">edubottechnologies@gmail.com</p>
+            </div>
+            <div className="text-center">
+              <h2 className="text-xl font-semibold mb-2 text-yellow-400">Scan to Connect</h2>
+              <a href="https://wa.me/your-whatsapp-number" target="_blank" rel="noopener noreferrer">
+                <img 
+                  src="./src/assets/scanner.png" 
+                  alt="WhatsApp QR Code"
+                  className="mx-auto w-24 h-24"
+                />
+              </a>
+            </div>
+            <div className="absolute bottom-4 right-4 lg:bottom-6 lg:right-6">
+              <a href="tel:+1234567890" className="w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center">
+                <FaPhone className="text-[#17174D]" />
+              </a>
+            </div>
+          </div>
+
+          {/* Form Section */}
+          <form onSubmit={handleSubmit} className="p-8 bg-white  border-[#F2B331] ">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-12">
+              <div>
+                <input
+                  type="text"
+                  name="fullName"
+                  placeholder="Full Name"
+                  className="w-full md:w-[50%] pb-1  md:ml-0 border-0 border-b  focus:border-blue-500 focus:border-b-2 focus:ring-0 bg-transparent outline-none transition-colors duration-200"
+                  required
+                />
+              </div>
+
+              <div>
+                <input
+                  type="text"
+                  name="lastName"
+                  placeholder="Last name"
+                  className="w-full  md:w-[50%] pb-1 md:ml-[-12] border-0 border-b  focus:border-blue-500 focus:border-b-2 focus:ring-0 bg-transparent outline-none transition-colors duration-200"
+                  required
+                />
+              </div>
+
+              <div>
+                <input
+                  type="text"
+                  name="designation"
+                  placeholder="Designation"
+                  className="w-full md:w-[50%] pb-1 border-0 border-b  focus:border-blue-500 focus:border-b-2 focus:ring-0 bg-transparent outline-none transition-colors duration-200"
+                  required
+                />
+              </div>
+
+              <div>
+                <input
+                  type="text"
+                  name="collegeName"
+                  placeholder="College Name"
+                  className="w-full  md:w-[50%] pb-1 border-0 border-b  focus:border-blue-500 focus:border-b-2 focus:ring-0 bg-transparent outline-none transition-colors duration-200"
+                  required
+                />
+              </div>
+
+              <div>
+                <input
+                  type="text"
+                  name="services"
+                  placeholder="Services"
+                  className="w-full md:w-[50%] pb-1 border-0 border-b  focus:border-blue-500 focus:border-b-2 focus:ring-0 bg-transparent outline-none transition-colors duration-200"
+                  required
+                />
+              </div>
+
+              <div>
+                <input
+                  type="text"
+                  name="location"
+                  placeholder="Select location"
+                  className="w-full  md:w-[50%] pb-1 border-0 border-b  focus:border-blue-500 focus:border-b-2 focus:ring-0 bg-transparent outline-none transition-colors duration-200"
+                  required
+                />
+              </div>
+
+              <div className="col-span-full">
+                <textarea
+                  name="comments"
+                  placeholder="Comments"
+                  className="w-full  pb-1 border-0 border-b  focus:border-blue-500 focus:border-b-2 focus:ring-0 bg-transparent outline-none transition-colors duration-200 min-h-[100px] resize-none"
+                ></textarea>
+              </div>
+
+              <div className="col-span-full flex items-start space-x-2">
+                <input
+                  type="checkbox"
+                  id="consent"
+                  name="consent"
+                  className="mt-1"
+                />
+                <label htmlFor="consent" className="text-sm text-gray-600">
+                  Yes, I consent to receive occasional marketing communications including emails, messages or calls with updates on services, market trends, events and other information from Edubot.
+                </label>
+              </div>
+
+              <div className="col-span-full">
+                <button
+                  type="submit"
+                  className="w-full lg:w-auto bg-yellow-400 hover:bg-yellow-500 text-black text-sm px-4 py-2 rounded"
+                >
+                  Get in touch
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      {/* Vertical Social Media Icons */}
+      <div className="hidden lg:flex flex-col items-center right-0  left-20 top-12 transform translate-y-20 mr-4">
+        <div className="w-px h-54 w-54 bg-blue-500 mb-4"></div>
+        <a href="tel:+1234567890" className="mb-4 text-blue-500 hover:text-blue-600">
+          <FaPhone size={24} />
+        </a>
+        <a href="https://www.instagram.com/your-instagram" target="_blank" rel="noopener noreferrer" className="mb-4 text-#1877F2 hover:text-blue-600">
+          <FaInstagram size={24} />
+        </a>
+        <a href="https://www.facebook.com/your-facebook" target="_blank" rel="noopener noreferrer" className="mb-4 text-blue-500 hover:text-blue-600">
+          <FaFacebookF size={24} />
+        </a>
+        <a href="https://www.linkedin.com/your-linkedin" target="_blank" rel="noopener noreferrer" className="mb-4 text-blue-500 hover:text-blue-600">
+          <FaLinkedinIn size={24} />
+        </a>
+        <div className="w-px h-32 bg-blue-500 mt-4"></div>
+      </div>
     </div>
-  );
+  )
 }
+
