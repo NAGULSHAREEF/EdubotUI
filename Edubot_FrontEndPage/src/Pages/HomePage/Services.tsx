@@ -193,7 +193,6 @@ const Services: React.FC = () => {
               <button className="bg-yellow-400 text-[#15164B] px-6 py-2 mb-10 rounded-full font-semibold flex items-center hover:bg-yellow-500">
               <Link to="/SkillOrientedCourses" >
                 Know more
-                
               </Link>
               <ChevronRight size={16} className="ml-2" />
               </button>

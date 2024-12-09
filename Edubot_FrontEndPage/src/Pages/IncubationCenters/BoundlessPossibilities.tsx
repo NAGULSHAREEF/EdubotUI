@@ -23,7 +23,7 @@ const steps: ProcessStep[] = [
   {
     number: 3,
     title: "Real Projects",
-    imageUrl: "./src/assets/Ranking.png",
+    imageUrl: "/src/assets/image3619.png",
     bgColor: "bg-[#FFFFFF]",
   },
   {

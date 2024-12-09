@@ -7,7 +7,8 @@ import InternshipsAndTrainingRoute from './Pages/InternshipsAndTrainings/Interns
 // import HomePageRoute from './Pages/HomePage/HomePageRoute/HomePageRoute.tsx'
 import IncubationCenterRoute from './Pages/IncubationCenters/IncubationCenterRoute/IncubationCenterRoute.tsx'
 import HomePageRoute from './Pages/HomePage/HomePageRoute/HomePageRoute.tsx'
-import SkillOrientedCourses from './Pages/SkillOrientedCourses/SkillOrientedCourses.tsx'
+import SkillOrientedCourses from './Pages/SkillOrientedCourses/SkillOrientedCourses/SkillOrientedCourses.tsx'
+// import SkillOrientedCourses from './Pages/SkillOrientedCourses/SkillOrientedCourses.tsx'
 
 const router = createBrowserRouter([
   {
@@ -23,12 +24,12 @@ const router = createBrowserRouter([
         element: <HomePageRoute />,
       },
       {
-        path: '/SkillOrientedCourses',
-        element: <SkillOrientedCourses/>
-      },
-      {
         path: '/IncubationCenter',
         element: <IncubationCenterRoute/>
+      },
+      {
+        path: '/SkillOrientedCourses',
+        element: <SkillOrientedCourses/>
       }
         
     ],
