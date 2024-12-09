@@ -43,7 +43,7 @@ function ProcessStep({ step }: { step: ProcessStep }) {
       className={`relative ${step.bgColor}  rounded-full p-4 sm:p-6 lg:p-8 flex flex-col items-center justify-center aspect-square border-2 transition-transform hover:scale-105`}
       style={{ borderColor }}
     >
-      <div className="absolute top-12 left-[20px] -translate-x-1/2 -translate-y-1/2 w-10 h-10 sm:w-10 sm:h-10 rounded-full bg-white border-2 border-black  flex items-center justify-center text-xs sm:text-lg font-bold">
+      <div className="absolute md:top-12 md:left-[20px]  top-[29px] left-[10px] -translate-x-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white border-2 border-black  flex items-center justify-center text-xs sm:text-lg font-bold">
         {step.number}
       </div>
       <img
@@ -72,12 +72,12 @@ function ConnectingLine() {
 
 function SectionTitle({ children }: { children: ReactNode }) {
   return (
-    <div className="text-center -mt-3 max-w-6xl mx-auto px-4 ">
+    <div className="text-center mt-6 max-w-6xl mx-auto px-4 ">
 
       <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-[#17174D]">
         Where Learning Meets Boundless Possibilities
       </h2>
-      <p className="text-sm sm:text-base lg:text-2xl mt-11 text-gray-600">
+      <p className="text-12  md:w-[100%] w-[100%] lg:text-[28px] mt-6 text-center text-gray-600">
         {children}
       </p>
     </div>
@@ -86,13 +86,13 @@ function SectionTitle({ children }: { children: ReactNode }) {
 
 export default function ProcessTimeline() {
   return (
-    <section className="py-16 px-4 sm:px-6  lg:mb-4 lg:px-8">
+    <section className="py-16 px-4 sm:px-6  lg:mb-4 lg:px-8 ">
       <div className="max-w-6xl mx-auto">
         <SectionTitle>
           Because education must evolve to meet industry needs. Our incubation
-          centers are the bridge that<br />
+          centers are the bridge that
           ensures students don't just learn theory—they gain practical skills to
-          succeed.<br />
+          succeed.
           Here is for you how it works
         </SectionTitle>
 
