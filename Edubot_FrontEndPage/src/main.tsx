@@ -4,7 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 import './index.css'
 import InternshipsAndTrainingRoute from './Pages/InternshipsAndTrainings/InternshipsAndTrainingRoute/InternshipsAndTrainingRoute.tsx'
-import HomePageRoute from './Pages/HomePage/HomePageRoute/HomePageRoute.tsx'
+// import HomePageRoute from './Pages/HomePage/HomePageRoute/HomePageRoute.tsx'
+import IncubationCenterRoute from './Pages/IncubationCenters/IncubationCenterRoute/IncubationCenterRoute.tsx'
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/',
-        element: <HomePageRoute />,
+        element: <IncubationCenterRoute />,
       },
     ],
   },

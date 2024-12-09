@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Ubuntu', 'sans-serif'],
+      },
       animation: {
         "loop-scroll": 'loop-scroll 50s linear infinite',
       },
