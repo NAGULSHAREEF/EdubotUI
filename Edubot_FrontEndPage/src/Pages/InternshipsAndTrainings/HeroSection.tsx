@@ -15,7 +15,7 @@ const HeroSection = () => {
             
             <div className="md:mt-5 mt-2">
               <button className="px-6 py-3 bg-[#F2B331] rounded-[30px] text-[18px] font-500 font-medium ">
-                Contact us
+              Explore Internships and Trannings
               </button>
             </div>
           </div>
@@ -23,7 +23,7 @@ const HeroSection = () => {
           {/* Right Column - Image */}
           <div className="relative mt-8  md:mt-0">
   <img 
-    src="/src/assets/herosection1.png" 
+    src="/src/assets/Internshipsimage.png" 
     alt="Students working together" 
     className="w-full md:w-full h-full rounded-lg object-cover  md:scale-125 scale-150  "
   />

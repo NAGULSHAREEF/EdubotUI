@@ -118,7 +118,7 @@
 
 import React, { useState } from 'react';
 import { ChevronRight } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
 const Services: React.FC = () => {
   const [activeSection, setActiveSection] = useState('internships');
   const [imageSrc, setImageSrc] = useState('src/assets/services1.png');
@@ -173,8 +173,11 @@ const Services: React.FC = () => {
                 Lorem ipsum dolor sit amet consectetur duis amet mauris lorem. ipsum dolor sit amet consectetur duis amet mauris lorem. Lorem ipsum dolor sit amet consectetur duis amet mauris lorem.
               </p>
               <button className="bg-yellow-400 text-[#15164B] px-6 py-2 mb-10 rounded-full font-semibold flex items-center hover:bg-yellow-500">
+              <Link to="/internshipsandtrainings">
                 Know more
-                <ChevronRight size={16} className="ml-2" />
+                
+              </Link>
+              <ChevronRight size={16} className="ml-2" />
               </button>
             </div>
           )}
@@ -188,9 +191,13 @@ const Services: React.FC = () => {
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
               </p>
               <button className="bg-yellow-400 text-[#15164B] px-6 py-2 mb-10 rounded-full font-semibold flex items-center hover:bg-yellow-500">
+              <Link to="/SkillOrientedCourses" >
                 Know more
-                <ChevronRight size={16} className="ml-2" />
+                
+              </Link>
+              <ChevronRight size={16} className="ml-2" />
               </button>
+              
             </div>
           )}
 
@@ -203,8 +210,11 @@ const Services: React.FC = () => {
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.
               </p>
               <button className="bg-yellow-400 text-[#15164B] px-6 py-2 mb-10 rounded-full font-semibold flex items-center hover:bg-yellow-500">
+              <Link to="/IncubationCenter" >
                 Know more
-                <ChevronRight size={16} className="ml-2" />
+                
+              </Link>
+              <ChevronRight size={16} className="ml-2" />
               </button>
             </div>
           )}
