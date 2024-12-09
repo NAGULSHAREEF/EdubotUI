@@ -66,7 +66,7 @@ function CourseCard({ course }: { course: Course }) {
   const bgColorClass = backgroundColors[course.id] || 'bg-gray-50';
   
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden">
+    <div className="bg-white w-[370px] rounded-[20px_2px_20px_2px] shadow-md overflow-hidden">
   {/* Image Section */}
   <div className={`relative h-48 w-full ${bgColorClass}`}>
     <img
