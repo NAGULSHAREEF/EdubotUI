@@ -6,6 +6,9 @@ import './index.css'
 import InternshipsAndTrainingRoute from './Pages/InternshipsAndTrainings/InternshipsAndTrainingRoute/InternshipsAndTrainingRoute.tsx'
 // import HomePageRoute from './Pages/HomePage/HomePageRoute/HomePageRoute.tsx'
 import IncubationCenterRoute from './Pages/IncubationCenters/IncubationCenterRoute/IncubationCenterRoute.tsx'
+import HomePageRoute from './Pages/HomePage/HomePageRoute/HomePageRoute.tsx'
+import SkillOrientedCourses from './Pages/SkillOrientedCourses/SkillOrientedCourses/SkillOrientedCourses.tsx'
+// import SkillOrientedCourses from './Pages/SkillOrientedCourses/SkillOrientedCourses.tsx'
 
 const router = createBrowserRouter([
   {
@@ -13,13 +16,22 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: 'internshipsandtrainings',
+        path: '/internshipsandtrainings',
         element: <InternshipsAndTrainingRoute />,
       },
       {
         path: '/',
-        element: <IncubationCenterRoute />,
+        element: <HomePageRoute />,
       },
+      {
+        path: '/IncubationCenter',
+        element: <IncubationCenterRoute/>
+      },
+      {
+        path: '/SkillOrientedCourses',
+        element: <SkillOrientedCourses/>
+      }
+        
     ],
   },
 ])

@@ -1,6 +1,6 @@
-import Courses from "./Courses"
-import HeroSection from "./HeroSection"
-import MasteringSkill from "./MasteringSkill"
+import Courses from "../Courses"
+import HeroSection from "../HeroSection"
+import MasteringSkill from "../MasteringSkill"
 
 const SkillOrientedCourses = () => {
   return (

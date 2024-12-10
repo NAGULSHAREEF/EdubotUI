@@ -75,18 +75,6 @@ const FutureFestButton: React.FC = () => {
      
 
       {/* Floating buttons */}
-    <div className="fixed top-1/2 md:py-60 md:px-96 md:translate-x-[520px] py-72 px-4  left-0   flex flex-col items-start space-y-5 z-50">
-      <div className="flex flex-col items-end space-y-5 w-[24px] h-[112px]">
-        
-        <a
-          href="#"
-          className="w-9 h-9 flex justify-items-end justify-center translate-x-96 transition-transform duration-300 hover:scale-110"
-          aria-label="Whatsapp"
-        >
-          <img src={WhatsappIcon} alt="Whatsapp" className="w-full h-full" />
-        </a>
-      </div>
-      </div>
       <div className="fixed top-1/2  -translate-y-1/2 right-0  flex flex-col items-end space-y-5 z-50">
         <div className="flex flex-col items-center space-y-5 w-[24px] h-[112px]">
         

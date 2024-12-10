@@ -1,10 +1,12 @@
 import { type ReactNode } from "react";
+
 interface ProcessStep {
   number: number;
   title: string;
   imageUrl: string;
   bgColor: string;
 }
+
 const steps: ProcessStep[] = [
   {
     number: 1,
@@ -15,13 +17,13 @@ const steps: ProcessStep[] = [
   {
     number: 2,
     title:  "Increased Earning Potential ",
-    imageUrl: "./src/assets/Earning.png",
+    imageUrl: "/src/assets/skillimage.png",
     bgColor: "bg-[#FFFFFF]",
   },
   {
     number: 3,
     title: "Competitive Edge",
-    imageUrl: "./src/assets/Competitive.png",
+    imageUrl: "/src/assets/competativeimage.png",
     bgColor: "bg-[#FFFFFF]",
   },
   {
@@ -31,9 +33,11 @@ const steps: ProcessStep[] = [
     bgColor: "bg-[#FFF7ED]",
   },
 ];
+
 function ProcessStep({ step }: { step: ProcessStep }) {
   const borderColor =
     step.number === 1 || step.number === 4 ? "#F2B33180" : "#17174D33";
+
   return (
     <div
       className={`relative ${step.bgColor}  rounded-full p-4 sm:p-6 lg:p-8 flex flex-col items-center justify-center aspect-square border-2 transition-transform hover:scale-105`}
@@ -119,7 +123,11 @@ export default function MasteringSkill() {
               <ProcessStep step={step} />
             </div>
           ))}
+      
+         
         </div>
+
+      
         <div className="lg:hidden  space-y-4  mt-12  max-w-40    mx-auto">
           {steps.map((step) => (
             <div key={step.number} className="relative">

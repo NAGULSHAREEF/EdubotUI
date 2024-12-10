@@ -152,14 +152,12 @@ export default function Courses() {
               <button
                 onClick={prevSlide}
                 className="absolute left-0 md:-left-3 top-1/2 -translate-y-1/2 -translate-x-4 bg-white rounded-full p-2 shadow-lg z-10"
-                aria-label="Previous slide"
               >
                 <ChevronLeft className="w-6 h-6 text-gray-600" />
               </button>
               <button
                 onClick={nextSlide}
                 className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white rounded-full p-2 shadow-lg z-10"
-                aria-label="next slide"
               >
                 <ChevronRight className="w-6 h-6 text-gray-600" />
               </button>
