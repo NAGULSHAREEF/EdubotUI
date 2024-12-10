@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,9 +41,15 @@ const Carousel = () => {
               Strengthen student employability with skill<br className=" hidden md:block " /> training programs and courses from India's best<br className=" hidden md:block "  /> growing platform.
             </p>
             <div className="flex flex-row gap-4 mb-4 md:-mt-0 -mt-8">
-              <button className="bg-yellow-400 text-[#312860] font-semibold px-4 py-2 rounded-full hover:bg-yellow-500">
+              {/* <button className="bg-yellow-400 text-[#312860] font-semibold px-4 py-2 rounded-full hover:bg-yellow-500">
                 Contact Us
-              </button>
+              </button> */}
+               <Link
+                to="/contact"
+                className="bg-yellow-400 text-[#312860] font-semibold px-4 py-2 rounded-full hover:bg-yellow-500"
+              >
+                Contact Us
+              </Link>
               <button className="bg-transparent border border-yellow-400 text-yellow-400 px-4 py-2 rounded-full font-semibold">
                 Know More
               </button>

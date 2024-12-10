@@ -6,6 +6,7 @@ import './index.css'
 import InternshipsAndTrainingRoute from './Pages/InternshipsAndTrainings/InternshipsAndTrainingRoute/InternshipsAndTrainingRoute.tsx'
 // import HomePageRoute from './Pages/HomePage/HomePageRoute/HomePageRoute.tsx'
 import IncubationCenterRoute from './Pages/IncubationCenters/IncubationCenterRoute/IncubationCenterRoute.tsx'
+import GetInTouch from './Pages/ContactUsPage/GetInTouch.tsx'; 
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <IncubationCenterRoute />,
       },
+      {
+        path: 'getintouch',
+        element: <GetInTouch />
+      }
     ],
   },
 ])
