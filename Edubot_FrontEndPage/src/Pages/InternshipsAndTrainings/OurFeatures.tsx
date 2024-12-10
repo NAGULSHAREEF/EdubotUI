@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import { ChevronLeft, ChevronRight, ChevronDown, Clock,  Weight } from 'lucide-react'
+import { ChevronLeft, ChevronRight, ChevronDown, Clock, Weight } from 'lucide-react'
 
 interface Course {
   id: number
@@ -61,49 +61,42 @@ const backgroundColors = {
   5: 'bg-[#F0FEDC]',   
 };
 
-
 function CourseCard({ course }: { course: Course }) {
   const bgColorClass = backgroundColors[course.id] || 'bg-gray-50';
   
   return (
-    <div className="bg-white w-[370px] rounded-[20px_2px_20px_2px] shadow-md overflow-hidden">
-  {/* Image Section */}
-  <div className={`relative h-48 w-full ${bgColorClass}`}>
-    <img
-      src={course.image}
-      alt={course.title}
-      className="w-full h-full object-contain"
-    />
-  </div>
+    <div className="bg-white  md:w-[380px] w-[340px] rounded-[20px_2px_20px_2px] shadow-md overflow-hidden border border-[#F2B331]">
+      <div className={`relative h-48 w-full ${bgColorClass}`}>
+        <img
+          src={course.image}
+          alt={course.title}
+          className="w-full h-full object-contain border border-b-[#F2B331]"
+        />
+      </div>
 
-  {/* Bordered Section */}
-  <div
-  className="bg-white border-l border-r border-b border-[#F2B331] rounded-[2px_2px_20px_2px] py-5 px-8 space-y-4"
->
-  <h3 className="text-[18px] md:text-[24px] font-[500]">{course.title}</h3>
-  <div className="inline-block bg-[#F2B331] text-white text-[14px] font-[700] px-3 py-1">
-    Internship with guaranteed job
-  </div>
-  <div className="flex flex-col gap-4 text-[#1D1F71] font-[700]">
-    <div className="flex items-center gap-2">
-      <Clock className="w-5 h-5" />
-      <span>{course.duration} months</span>
+      <div className="bg-white py-5 px-8 space-y-4">
+        <h3 className="text-[18px] md:text-[24px] font-[500]">{course.title}</h3>
+        <div className="inline-block bg-[#F2B331] text-white text-[14px] font-[700] px-3 py-1">
+          Internship with guaranteed job
+        </div>
+        <div className="flex flex-col gap-4 text-[#1D1F71] font-[700]">
+          <div className="flex items-center gap-1">
+            <Clock className="w-5 h-5" />
+            <span>{course.duration} months</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <Weight className="w-5 h-5" />
+            <span>{course.opportunities} opportunities</span>
+          </div>
+        </div>
+        <a
+          href="#"
+          className="text-[#00A1FF] text-[14px] font-[500] leading-[23px] inline-block hover:underline"
+        >
+          Know more &gt;
+        </a>
+      </div>
     </div>
-    <div className="flex items-center gap-2">
-      <Weight className="w-5 h-5" />
-      <span>{course.opportunities} opportunities</span>
-    </div>
-  </div>
-  <a
-    href="#"
-    className="text-[#00A1FF] text-[14px] font-[500] inline-block hover:underline"
-  >
-    Know more &gt;
-  </a>
-</div>
-
-</div>
-
   )
 }
 
@@ -130,18 +123,18 @@ export default function Features() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-10 md:px-4 py-12">
+    <div className="max-w-7xl mx-auto px-10 md:px-10 py-12">
       <h1 className="text-[22px] leading-[26px] md:text-[48px] md:leading-[66px] font-bold text-center mb-8">
         Our featured internship and training services
       </h1>
 
-      <div className="flex flex-col md:flex-row justify-between  gap-4 mb-8">
-        <div className="bg-gray-100 rounded-[150px]  md:w-[406px] h-[55px] w-full ">
+      <div className="flex flex-col md:flex-row justify-between gap-4 mb-8">
+        <div className=" bg-white rounded-[150px] md:w-[406px] h-[55px] w-full">
           <div className="flex items-center">
             <button
               onClick={() => setActiveTab('internship')}
-              className={`relative px-6 py-2 md:w-[215px] w-[187px] h-[55px] rounded-[150px] transition-colors ${
-                activeTab === 'internship' ? 'bg-indigo-900 text-white font-[700] text-[12px] md:text-[18px] ' : 'font-[700] md:text-[18px] text-[12px]  '
+              className={`relative px-6 py-2 md:w-[215px] w-[187px] h-[55px] rounded-[150px] transition-colors shadow-[0px_10px_18px_0px_#806FAE20] ${
+                activeTab === 'internship' ? 'bg-[#1D1F71] text-white font-[700] text-[12px] md:text-[18px]' : 'font-[700] md:text-[18px] text-[12px]'
               }`}
             >
               {activeTab === 'internship' && (
@@ -151,8 +144,8 @@ export default function Features() {
             </button>
             <button
               onClick={() => setActiveTab('training')}
-              className={`relative px-6 py-2 md:w-[215px] w-[187px] h-[55px] rounded-[150px] transition-colors ${
-                activeTab === 'training' ? 'bg-indigo-900 text-white md:text-[18px] font-[700] text-[12px] ' : 'md:text-[18px] font-[700] text-[12px]'
+              className={`relative px-6 py-2 md:w-[215px] w-[187px] h-[55px] rounded-[150px] transition-colors shadow-[0px_10px_18px_0px_#806FAE20] ${
+                activeTab === 'training' ? ' bg-[#1D1F71] text-white md:text-[18px] font-[700] text-[12px]' : 'md:text-[18px] font-[700] text-[12px]'
               }`}
             >
               {activeTab === 'training' && (
@@ -163,39 +156,45 @@ export default function Features() {
           </div>
         </div>
 
-        <div className="relative">
-          <button
-            onClick={() => setShowDurationFilter(!showDurationFilter)}
-            className="flex justify-center items-center rounded-[30px] gap-2 w-[130px] h-[45px] md:w-[151px] md:h-[46px] px-4 py-2 bg-[#F2B331]  md:text-[18px] text-[#15164B] font-[500]"
-          >
-            Sort by
-            <ChevronDown className="w-5 h-5" />
+        <div className="flex items-center gap-4">
+        <button className="flex justify-center items-center rounded-[30px] gap-2 w-[130px] h-[45px] md:w-[151px] md:h-[46px] px-4 py-2 border border-[#17174F] md:leading-[12px] md:text-[18px] text-[#15164B] font-[500]">
+            View all
           </button>
-          {showDurationFilter && (
-            <div className="absolute top-full right-0 mt-2 bg-white rounded-lg shadow-lg py-2 z-10">
-              <button
-                onClick={() => {
-                  setSelectedDuration(null)
-                  setShowDurationFilter(false)
-                }}
-                className="w-full px-4 py-2 text-left hover:bg-gray-100"
-              >
-                All Durations
-              </button>
-              {uniqueDurations.map(duration => (
+          <div className="relative">
+            <button
+              onClick={() => setShowDurationFilter(!showDurationFilter)}
+              className="flex justify-center items-center rounded-[30px] gap-2 w-[130px] h-[45px] md:w-[151px] md:h-[46px] px-4 py-2 bg-[#F2B331] md:text-[18px] text-[#15164B] font-[500]"
+            >
+              Sort by
+              <ChevronDown className="w-5 h-5" />
+            </button>
+            {showDurationFilter && (
+              <div className="absolute top-full right-0 mt-2 bg-white rounded-lg shadow-lg py-2 z-10">
                 <button
-                  key={duration}
                   onClick={() => {
-                    setSelectedDuration(duration)
+                    setSelectedDuration(null)
                     setShowDurationFilter(false)
                   }}
                   className="w-full px-4 py-2 text-left hover:bg-gray-100"
                 >
-                  {duration} months
+                  All Durations
                 </button>
-              ))}
-            </div>
-          )}
+                {uniqueDurations.map(duration => (
+                  <button
+                    key={duration}
+                    onClick={() => {
+                      setSelectedDuration(duration)
+                      setShowDurationFilter(false)
+                    }}
+                    className="w-full px-4 py-2 text-left hover:bg-gray-100"
+                  >
+                    {duration} months
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+          
         </div>
       </div>
 
@@ -233,3 +232,4 @@ export default function Features() {
     </div>
   )
 }
+
