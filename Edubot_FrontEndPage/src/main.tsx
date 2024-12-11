@@ -8,6 +8,7 @@ import InternshipsAndTrainingRoute from './Pages/InternshipsAndTrainings/Interns
 import IncubationCenterRoute from './Pages/IncubationCenters/IncubationCenterRoute/IncubationCenterRoute.tsx'
 import HomePageRoute from './Pages/HomePage/HomePageRoute/HomePageRoute.tsx'
 import SkillOrientedCourses from './Pages/SkillOrientedCourses/SkillOrientedCourses/SkillOrientedCourses.tsx'
+import AboutUsPageRoute from './Pages/AboutUsPage/AboutUsPageRoute/AboutUsPageRoute.tsx'
 // import SkillOrientedCourses from './Pages/SkillOrientedCourses/SkillOrientedCourses.tsx'
 
 const router = createBrowserRouter([
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
       {
         path: '/SkillOrientedCourses',
         element: <SkillOrientedCourses/>
+      },
+      // here i want about us route
+      {
+        path:'/aboutus',
+        element: <AboutUsPageRoute/>
       }
         
     ],
