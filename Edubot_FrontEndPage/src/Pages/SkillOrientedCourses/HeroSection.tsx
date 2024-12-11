@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom"
+
 const HeroSection = () => {
   return (
     <div className=" h-full bg-[url('./src/assets/Heresction1bg.png')] bg-cover bg-center  ">
-      <div className="container mx-auto  justify-center">
+      <div className="container mx-auto justify-center">
        
         <div className="grid md:grid-cols-2 gap-6 md:gap-8 overflow-hidden md:px-16 px-4  md:overflow-visible items-center">
 
@@ -14,9 +16,11 @@ const HeroSection = () => {
             <p className="md:text-[24px] text-[17px] font-[400] md:font-[500] md:mb-8 mb-4 mt-4 ml-2  ">Let's help you land your dream career</p>
             
             <div>
+              <Link to="/getintouch">
               <button className="px-6 py-3  bg-[#F2B331] rounded-[30px] text-[18px] font-500 font-medium ">
                 Contact us
               </button>
+              </Link>
             </div>
           </div>
           <div className="relative  ">

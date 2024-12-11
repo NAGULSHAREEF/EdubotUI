@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         element: <IncubationCenterRoute />,
       },
       {
-        path: 'getintouch',
+        path: '/getintouch',
         element: <GetInTouch />
       }
     ],
