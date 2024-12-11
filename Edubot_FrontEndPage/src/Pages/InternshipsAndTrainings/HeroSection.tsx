@@ -18,7 +18,6 @@ const HeroSection = () => {
               </button>
             </div>
           </div>
-
           {/* Right Column - Image */}
           <div className="mt-8 md:mt-0">
             <img 
