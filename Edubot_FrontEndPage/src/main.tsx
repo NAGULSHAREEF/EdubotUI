@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       {
         path: 'getintouch',
         element: <GetInTouch />
-      }
+      },
       {
         path: '/SkillOrientedCourses',
         element: <SkillOrientedCourses/>
@@ -41,8 +41,7 @@ const router = createBrowserRouter([
       {
         path:'/aboutus',
         element: <AboutUsPageRoute/>
-      }
-        
+      }, 
     ],
   },
 ])
