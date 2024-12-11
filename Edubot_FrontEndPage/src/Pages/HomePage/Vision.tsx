@@ -3,7 +3,7 @@ import { Check } from 'lucide-react';
 import { ChevronRight } from 'lucide-react';
 const Vision: React.FC = () => {
   return (
-    <div className="container mx-auto px-8 md:px-10 py-10 overflow-hidden md:max-h-[600px] ">
+    <div className="container mx-auto px-8 md:px-10 py-10 md:py-32 overflow-hidden md:max-h-[600px] ">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2 items-center">
         <div className="space-y-6 md:translate-y-[-100px]">
           <h3 className="text-md font-bold text-[#17174D] uppercase">#our vision</h3>
@@ -40,11 +40,11 @@ const Vision: React.FC = () => {
         </div>
 
         {/* Right Section - Image */}
-        <div className="relative flex justify-center md:translate-y-10 ">
+        <div className="relative flex justify-center  ">
           <img
             src="/src/assets/student.svg"
             alt="Learning Platform"
-            className="  w-full h-full md:scale-125 scale-125 -translate-x-6 md:translate-x-0 "
+            className="  w-full h-full md:scale-125 scale-125 md:-translate-y-20 -translate-x-6 md:translate-x-0 "
           />
         </div>
 

@@ -185,10 +185,10 @@ const Services: React.FC = () => {
 
           {activeSection === 'courses' && (
             <div className="md:w-1/2 space-y-6 text-center md:text-left p-6 rounded-lg text-[#222222] ">
-              <h3 className="text-[30px] font-bold">
+              <h3 className="md:text-[34px] text-[20px] leading-[22px] text-left font-bold md:leading-[39px]">
                 Enhance Your Skills with Our Courses
               </h3>
-              <p className="text-[#222222]">
+              <p className="text-[#222222]  md:text-[18px] md:leading-[20px]">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
               </p>
               <button className="bg-yellow-400 text-[#15164B] px-6 py-2 mb-10 rounded-full font-semibold flex items-center hover:bg-yellow-500">
@@ -203,10 +203,10 @@ const Services: React.FC = () => {
 
           {activeSection === 'incubation' && (
             <div className="md:w-1/2 space-y-6 text-center md:text-left p-6 rounded-lg text-[#222222] ">
-              <h3 className="text-[30px] font-bold">
+              <h3 className="md:text-[34px] text-[20px] leading-[22px] text-left font-bold md:leading-[39px]">
                 Grow with Our Incubation Centre
               </h3>
-              <p className="text-[#222222]">
+              <p className="text-[#222222]  md:text-[18px] md:leading-[20px]">
                 Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.
               </p>
               <button className="bg-yellow-400 text-[#15164B] px-6 py-2 mb-10 rounded-full font-semibold flex items-center hover:bg-yellow-500">
