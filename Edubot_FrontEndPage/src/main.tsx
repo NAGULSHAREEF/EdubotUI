@@ -6,6 +6,7 @@ import './index.css'
 import InternshipsAndTrainingRoute from './Pages/InternshipsAndTrainings/InternshipsAndTrainingRoute/InternshipsAndTrainingRoute.tsx'
 // import HomePageRoute from './Pages/HomePage/HomePageRoute/HomePageRoute.tsx'
 import IncubationCenterRoute from './Pages/IncubationCenters/IncubationCenterRoute/IncubationCenterRoute.tsx'
+import GetInTouch from './Pages/ContactUsPage/GetInTouch.tsx'; 
 import HomePageRoute from './Pages/HomePage/HomePageRoute/HomePageRoute.tsx'
 import SkillOrientedCourses from './Pages/SkillOrientedCourses/SkillOrientedCourses/SkillOrientedCourses.tsx'
 import AboutUsPageRoute from './Pages/AboutUsPage/AboutUsPageRoute/AboutUsPageRoute.tsx'
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         path: '/IncubationCenter',
         element: <IncubationCenterRoute/>
       },
+      {
+        path: 'getintouch',
+        element: <GetInTouch />
+      }
       {
         path: '/SkillOrientedCourses',
         element: <SkillOrientedCourses/>

@@ -1,4 +1,13 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 const HeroSection = () => {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate('/getintouch');
+  };
+
   return (
     <div className="h-full bg-[url('./src/assets/Heresction1bg.png')] bg-cover bg-center  ">
       <div className="container mx-auto  justify-center">
@@ -8,10 +17,14 @@ const HeroSection = () => {
             <h1 className="text-[32px] leading-[36px] md:text-[48px] md:leading-[60px] lg:text-[48px] md:w-[110%] w-[80%] lg:leading-[66px] font-bold text-[#1D1F71] ">
               Bridge Academia and Industry for Future-Ready Graduates.
             </h1>
-            <p className="md:text-[24px] text-[17px] font-[400] md:font-[500] md:mb-8 mb-3 mt-3 ml-2  ">Let's help you land your dream career</p>
-            
+            <p className="md:text-[24px] text-[17px] font-[400] md:font-[500] md:mb-8 mb-3 mt-3 ml-2">
+              Let's help you land your dream career
+            </p>
             <div>
-              <button className="px-6 py-3  bg-[#F2B331] rounded-[30px] text-[18px] -mt-4 font-500 font-medium ">
+              <button
+                className="px-6 py-3 bg-[#F2B331] rounded-[30px] text-[18px] -mt-4 font-500 font-medium"
+                onClick={handleContactClick}
+              >
                 Contact us
               </button>
             </div>
@@ -27,7 +40,7 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;
