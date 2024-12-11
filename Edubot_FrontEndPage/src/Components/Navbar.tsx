@@ -20,7 +20,8 @@ const Navbar = () => {
             <img src="/src/assets/logo.svg" alt="EduBot" className="h-14 pl-3" />
           </div>
           <div className="hidden md:flex space-x-6 lg:translate-x-80 order-2 md:order-1">
-            <a href="#about" className="hover:text-[#F2B331]">About Us</a>
+            <Link to="/aboutus" className="hover:text-[#F2B331]">About us</Link>
+            
             <Link to="/internshipsandtrainings" className="hover:text-[#F2B331]">Our Services</Link>
             <a href="#updates" className="hover:text-[#F2B331]">Latest updates</a>
           </div>
