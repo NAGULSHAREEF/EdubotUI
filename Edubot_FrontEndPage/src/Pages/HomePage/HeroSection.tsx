@@ -22,7 +22,7 @@ const Carousel = () => {
     <div className="relative w-full h-full overflow-hidden">
       <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {/* HeroSection */}
-        <div className="min-w-full bg-[url('/src/assets/bg2.png')] bg-cover bg-center bg-no-repeat text-white md:w-full overflow-hidden flex flex-col md:flex-row md:h-[500px] h-[750px] rounded-b-3xl">
+        <div className="min-w-full bg-[url('/src/assets/bg2.png')] bg-cover bg-center bg-no-repeat text-white md:w-full overflow-hidden flex flex-col md:flex-row md:h-[530px] h-[750px] rounded-b-3xl">
           <div className="flex flex-col justify-center items-start w-full md:w-1/2 p-4 md:p-20 gap-8 md:translate-y-[100px]">
             <h3 className="text-sm uppercase tracking-wide font-medium mb-2 translate-y-14 md:translate-y-5">
               #our motive
@@ -126,7 +126,7 @@ const Carousel = () => {
         </div>
 
         {/* HeroSection2 */}
-        <div className="min-w-full bg-[url('/src/assets/bg2.png')] bg-cover bg-center bg-no-repeat text-white md:w-full overflow-hidden flex flex-col md:flex-row md:h-[500px] h-[750px] rounded-b-3xl">
+        <div className="min-w-full bg-[url('/src/assets/bg2.png')] bg-cover bg-center bg-no-repeat text-white md:w-full overflow-hidden flex flex-col md:flex-row md:h-[530px] h-[750px] rounded-b-3xl">
           <div className="flex flex-col justify-center items-start w-full md:w-1/2 p-4 md:p-20 gap-8 md:translate-y-[100px] ">
             <h3 className="text-sm uppercase tracking-wide font-medium mb-2 translate-y-14 md:translate-y-5">
               #our motive
@@ -212,7 +212,7 @@ const Carousel = () => {
         </div>
 
         {/* HeroSection3 */}
-        <div className="min-w-full bg-[url('/src/assets/bg1.png')] bg-cover bg-center bg-no-repeat text-white md:w-full overflow-hidden flex flex-col md:flex-row md:h-[500px] h-[750px] rounded-b-3xl">
+        <div className="min-w-full bg-[url('/src/assets/bg1.png')] bg-cover bg-center bg-no-repeat text-white md:w-full overflow-hidden flex flex-col md:flex-row md:h-[530px] h-[750px] rounded-b-3xl">
           <div className="flex flex-col justify-center items-start w-full md:w-1/2 p-4 md:p-20 gap-8 md:translate-y-[100px]">
             <h3 className="text-sm uppercase tracking-wide font-medium mb-2 translate-y-14 md:translate-y-5">
               #our motive
