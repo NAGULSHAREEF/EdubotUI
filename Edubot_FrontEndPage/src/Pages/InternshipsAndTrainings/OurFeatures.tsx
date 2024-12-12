@@ -129,32 +129,40 @@ export default function Features() {
       </h1>
 
       <div className="flex flex-col md:flex-row justify-between gap-4 mb-8">
-        <div className=" bg-white rounded-[150px] md:w-[406px] h-[55px] w-full">
-          <div className="flex items-center">
-            <button
-              onClick={() => setActiveTab('internship')}
-              className={`relative px-6 py-2 md:w-[215px] w-[187px] h-[55px] rounded-[150px] transition-colors shadow-[0px_10px_18px_0px_#806FAE20] ${
-                activeTab === 'internship' ? 'bg-[#1D1F71] text-white font-[700] text-[12px] md:text-[18px]' : 'font-[700] md:text-[18px] text-[12px]'
-              }`}
-            >
-              {activeTab === 'internship' && (
-                <span className="absolute md:left-8 left-7 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-[#F2B331]" />
-              )}
-              Internships
-            </button>
-            <button
-              onClick={() => setActiveTab('training')}
-              className={`relative px-6 py-2 md:w-[215px] w-[187px] h-[55px] rounded-[150px] transition-colors shadow-[0px_10px_18px_0px_#806FAE20] ${
-                activeTab === 'training' ? ' bg-[#1D1F71] text-white md:text-[18px] font-[700] text-[12px]' : 'md:text-[18px] font-[700] text-[12px]'
-              }`}
-            >
-              {activeTab === 'training' && (
-                <span className="absolute md:left-12 left-10 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-[#F2B331]" />
-              )}
-              Training
-            </button>
-          </div>
-        </div>
+      <div className="bg-white rounded-[150px] md:w-[406px] w-full h-[55px]  shadow-[0px_10px_18px_0px_#806FAE20]">
+      <div className="flex items-center h-full">
+        <button
+          onClick={() => setActiveTab('internship')}
+          className={`relative flex-1 h-full rounded-[150px] transition-colors ${
+            activeTab === 'internship'
+              ? 'bg-[#1D1F71] text-white'
+              : 'text-[#333333] hover:bg-gray-100'
+          }`}
+        >
+          <span className="relative z-10 font-bold text-[12px] md:text-[18px]">
+            {activeTab === 'internship' && (
+              <span className="absolute right-20 md:right-28 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-[#F2B331]" />
+            )}
+            Internships
+          </span>
+        </button>
+        <button
+          onClick={() => setActiveTab('training')}
+          className={`relative flex-1 h-full rounded-[150px] transition-colors ${
+            activeTab === 'training'
+              ? 'bg-[#1D1F71] text-white'
+              : 'text-[#333333] hover:bg-gray-100'
+          }`}
+        >
+          <span className="relative z-10 font-bold text-[12px] md:text-[18px]">
+            {activeTab === 'training' && (
+              <span className="absolute right-16 md:right-20 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-[#F2B331]" />
+            )}
+            Training
+          </span>
+        </button>
+      </div>
+    </div>
 
         <div className="flex items-center gap-4">
         <button className="flex justify-center items-center rounded-[30px] gap-2 w-[130px] h-[45px] md:w-[151px] md:h-[46px] px-4 py-2 border border-[#17174F] md:leading-[12px] md:text-[18px] text-[#15164B] font-[500]">
@@ -165,7 +173,7 @@ export default function Features() {
               onClick={() => setShowDurationFilter(!showDurationFilter)}
               className="flex justify-center items-center rounded-[30px] gap-2 w-[130px] h-[45px] md:w-[151px] md:h-[46px] px-4 py-2 bg-[#F2B331] md:text-[18px] text-[#15164B] font-[500]"
             >
-              Sort by
+              Short by
               <ChevronDown className="w-5 h-5" />
             </button>
             {showDurationFilter && (
