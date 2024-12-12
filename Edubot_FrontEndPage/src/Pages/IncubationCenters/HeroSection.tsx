@@ -13,7 +13,7 @@ const HeroSection = () => {
       <div className="container mx-auto  justify-center">
         <div className="grid md:grid-cols-2 gap-6 md:gap-8 overflow-hidden md:px-16 px-4  md:overflow-visible items-center">
           <div className=" overflow-hidden md:overflow-visible justify-center md:mt-2 mt-12 mb-8 ">
-            <p className="text-[#222222] text-[16px]  md:text-[24px] font-bold">#our service - <span className="md:text-[24px] text-[16px] font-[500] md:font-bold">Incubation centers</span></p>
+            <p className="text-[#222222] text-[16px]  md:text-[24px] font-bold">#our service - <span className="md:text-[24px] text-[16px] font-[500] md:font-bold">Corporate on campus</span></p>
             <h1 className="text-[32px] leading-[36px] md:text-[48px] md:leading-[60px] lg:text-[48px] md:w-[110%] w-[80%] lg:leading-[66px] font-bold text-[#1D1F71] ">
               Bridge Academia and Industry for Future-Ready Graduates.
             </h1>

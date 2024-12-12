@@ -1,5 +1,3 @@
-'use client'
-
 import { useState } from 'react'
 import Image from '/src/assets/testipage1.svg'
 import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'

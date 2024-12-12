@@ -16,9 +16,9 @@ const Card = ({ title, description }: CardProps) => {
           className="w-[107px] h-[115px] md:w-[160px] md:h-[180px] object-contain -md:mt-4 -md:mb-12"
         />
       </div>
-      <div className="text-center">
-        <h2 className="text-[28px] md:text-5xl font-bold text-gray-800 md:mb-8">{title}</h2>
-        <p className="text-gray-600 text-[12px] md:text-xl leading-relaxed">
+      <div className="text-center md:p-4">
+        <h2 className="text-[28px] md:text-[48px] md:leading-[66px] font-bold text-[#222222] md:mb-1">{title}</h2>
+        <p className="text-[#222222] text-[12px] md:text-[20px] md:leading-[23px]">
           {description}
         </p>
       </div>

@@ -1,5 +1,3 @@
-'use client'
-
 import { useState } from 'react'
 
 export default function FeelingConfused() {
@@ -47,7 +45,7 @@ export default function FeelingConfused() {
 
   return (
     <div className="bg-[#17174F]  text-white mb-28 md:mb-6">
-      <div className="container mx-auto  md:px-8 px-12 md:py-0">
+      <div className="  md:px-16 px-12 md:py-0">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           
           {/* Form Column */}
