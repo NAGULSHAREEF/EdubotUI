@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const HeroSection = () => {
   return (
     <div className="h-full bg-[url('./src/assets/Heresction1bg.png')] bg-cover bg-center">
@@ -10,9 +12,11 @@ const HeroSection = () => {
             </h1>
             <p className="md:text-[24px] text-[17px] font-[400] md:font-[500] md:mb-8 mb-4 mt-4 ml-2">Let's help you land your dream career</p>
             <div>
-              <button className="px-6 py-3 bg-[#F2B331] rounded-[30px] text-[18px] font-500 font-medium">
+              <Link to="/getintouch">
+              <button className="px-6 py-3  bg-[#F2B331] rounded-[30px] text-[18px] font-500 font-medium ">
                 Contact us
               </button>
+              </Link>
             </div>
           </div>
           <div className="flex justify-center">
