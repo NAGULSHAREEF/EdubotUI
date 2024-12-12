@@ -53,7 +53,7 @@ const Questions: React.FC = () => {
   return (
     <div className="container mx-auto px-4 md:mt-10 mb-14">
   
-      <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
+      <h2 className="text-center text-2xl md:text-[38px]  font-bold mb-6">
         Got Questions?{' '}
         <span className="text-yellow-500">We’ve got all<br/> your answers!</span>
       </h2>  
