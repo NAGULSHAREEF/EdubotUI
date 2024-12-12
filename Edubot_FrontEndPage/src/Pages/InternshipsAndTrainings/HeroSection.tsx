@@ -1,7 +1,7 @@
 const HeroSection = () => {
   return (
-    <div className="h-full bg-[url('/src/assets/herosection-bg.png')] bg-cover bg-center">
-      <div className="container mx-auto md:px-12 ">
+    <div className="h-full md:h-[480px] bg-[url('/src/assets/herosection-bg.png')] bg-cover bg-center">
+      <div className=" md:pl-24 ">
         {/* Main Content Grid */}
         <div className="grid md:grid-cols-2 gap-6 md:gap-8 overflow-hidden md:px-0 px-8  md:overflow-visible items-center">
           {/* Left Column - Text Content */}

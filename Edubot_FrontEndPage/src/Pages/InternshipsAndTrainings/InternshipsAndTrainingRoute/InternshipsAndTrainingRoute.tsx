@@ -11,7 +11,7 @@ const InternshipsAndTrainingRoute = () => {
       <BenifitsYouWillGain/>
       <OurFeatures/>
       <FeelingConfused/>
-      <WhatOurPartners/>
+      <WhatOurPartners h1='Success Stories from Our Participants' p='Echoes of Satisfaction and Confidence in Our Solutions' content={""} author={""} role={""}/>
     </div>
   )
 }

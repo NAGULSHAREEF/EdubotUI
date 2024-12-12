@@ -51,7 +51,7 @@ const Questions: React.FC = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 mb-14">
+    <div className="container mx-auto px-4 md:mt-10 mb-14">
   
       <h2 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold mb-6">
         Got Questions?{' '}

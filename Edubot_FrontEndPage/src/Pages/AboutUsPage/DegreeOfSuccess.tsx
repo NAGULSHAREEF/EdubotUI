@@ -37,7 +37,7 @@ const DegreeOfSuccess = () => {
   ]
 
   return (
-    <div ref={ref} className="bg-[#1a1b3b] py-16 md:py-12 md:h-[360px] px-4">
+    <div ref={ref} className="bg-[#17174F] py-16 md:py-12 md:h-[360px] px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-center text-[22px] leading-[26px] md:text-[40px] md:leading-[52px] font-bold md:pb-3 text-[#F2B331] mb-12">
           Degrees of Success: Our Company Stats.
