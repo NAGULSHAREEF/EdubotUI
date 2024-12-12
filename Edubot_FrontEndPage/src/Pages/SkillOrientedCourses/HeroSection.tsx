@@ -1,7 +1,7 @@
 const HeroSection = () => {
   return (
     <div className="h-full bg-[url('./src/assets/Heresction1bg.png')] bg-cover bg-center">
-      <div className="container mx-autos">
+      <div className="container mx-autos md:pt-12 ">
         <div className="flex flex-col md:flex-row justify-around gap-6 md:gap-8 items-center">
           <div className="flex flex-col justify-center text-center md:text-left md:mt-2 mt-12 mb-8 md:w-[600px]">
             <p className="text-[#222222] text-[16px] md:text-[24px] font-bold">#our service - <span className="md:text-[24px] text-[16px] font-[500] md:font-bold">Skill oriented courses</span></p>

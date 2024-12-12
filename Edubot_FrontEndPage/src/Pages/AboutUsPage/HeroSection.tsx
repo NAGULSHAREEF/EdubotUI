@@ -12,7 +12,7 @@ const HeroSection: React.FC<VideoSectionProps> = ({ youtubeUrl = "https://www.yo
   };
 
   return (
-    <div className="w-full min-h-screen bg-[url('./src/assets/aboutusbg.png')] bg-cover bg-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="w-full min-h-screen bg-[url('/src/assets/aboutusbg.png')] bg-cover bg-center py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         <div className="text-center mb-12 px-4">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-[#17174D]">
@@ -51,7 +51,7 @@ const HeroSection: React.FC<VideoSectionProps> = ({ youtubeUrl = "https://www.yo
         <div className="text-center w-full">
           <button
             onClick={handleGlimpseClick}
-            className="group relative inline-flex items-center px-6 py-2.5 bg-[#F2B331] hover:bg-[#F2B331]/90 text-black text-sm font-medium rounded-full transition-all duration-300 hover:scale-105"
+            className="group relative md:h-[45px] inline-flex items-center px-6 py-2.5 md:text-[18px] font-[500] md:leading-[12px] bg-[#F2B331] hover:bg-[#F2B331]/90  text-sm text-[#15164B] rounded-full transition-all duration-300 hover:scale-105"
           >
             <span>Catch a glimpse of the impact we've made!</span>
             <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-gray-800 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
