@@ -12,6 +12,7 @@ import SkillOrientedCourses from './Pages/SkillOrientedCourses/SkillOrientedCour
 import AboutUsPageRoute from './Pages/AboutUsPage/AboutUsPageRoute/AboutUsPageRoute.tsx'
 import ViewAllPageView from './Pages/InternshipsAndTrainings/ViewAllPage/ViewAllPageRoute/ViewAllPageView.tsx'
 import ViewAllSkillOrientedCourses from './Pages/SkillOrientedCourses/ViewAllSkillOrientedCourses/ViewAllSkillOrientedCourses.tsx'
+import IntrenshipsDetailsPage from './Pages/InternshipsAndTrainings/IntrenshipsDetailPage/IntrenshipsDetailsPageRoute/IntrenshipsDetailsPage.tsx'
 // import SkillOrientedCourses from './Pages/SkillOrientedCourses/SkillOrientedCourses.tsx'
 
 const router = createBrowserRouter([
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: '/viewallcourses',
         element: <ViewAllSkillOrientedCourses/>
+      },
+      {
+        path: '/internshipdetailpage/:id',
+        element: <IntrenshipsDetailsPage />,
       }
     ],
   },

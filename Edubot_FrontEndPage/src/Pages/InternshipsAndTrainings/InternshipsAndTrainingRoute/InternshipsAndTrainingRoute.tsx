@@ -5,6 +5,8 @@ import HeroSection from "../HeroSection"
 import OurFeatures from "../OurFeatures"
 import Questions from "../../HomePage/Questions"
 
+
+
 const InternshipsAndTrainingRoute = () => {
   return (
     <div>
