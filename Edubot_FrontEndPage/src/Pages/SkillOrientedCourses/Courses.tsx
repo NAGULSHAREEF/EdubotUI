@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import  { useState, useEffect } from 'react'
 import { ChevronLeft, ChevronRight, Clock, Users } from 'lucide-react'
-
+import {Link} from 'react-router-dom'
 interface Course {
   id: number
   title: string
@@ -168,9 +168,11 @@ export default function Courses() {
                   <ChevronRight className="w-5 h-5 text-[#F2B331]" />
                 </button>
               </div>
+              <Link to="/viewallcourses">
               <button className="w-[110px] rounded-[30px] h-10 text-[#F2B331] border-[2px] border-[#F2B331] hover:text-[#F2B331] transition-colors duration-300 text-[18px] font-medium">
                 View all
               </button>
+              </Link>
             </div>
           </div>
         </div>

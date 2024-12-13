@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { ChevronLeft, ChevronRight, ChevronDown, Clock, Weight } from 'lucide-react'
-
+import {Link} from 'react-router-dom'
 interface Course {
   id: number
   title: string
@@ -157,9 +157,11 @@ export default function Features() {
         </div>
 
         <div className="flex items-center gap-4">
+        <Link to='/viewallinternshipsandtrainings'>
         <button className="flex justify-center items-center rounded-[30px] gap-2 w-[130px] h-[45px] md:w-[151px] md:h-[46px] px-4 py-2 border border-[#17174F] md:leading-[12px] md:text-[18px] text-[#15164B] font-[500]">
             View all
           </button>
+          </Link>
           <div className="relative">
             <button
               onClick={() => setShowDurationFilter(!showDurationFilter)}
