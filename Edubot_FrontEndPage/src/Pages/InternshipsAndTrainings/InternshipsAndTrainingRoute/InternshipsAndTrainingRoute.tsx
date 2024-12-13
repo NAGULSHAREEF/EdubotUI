@@ -4,6 +4,8 @@ import FeelingConfused from "../FeelingConfused"
 import HeroSection from "../HeroSection"
 import OurFeatures from "../OurFeatures"
 
+
+
 const InternshipsAndTrainingRoute = () => {
   return (
     <div>

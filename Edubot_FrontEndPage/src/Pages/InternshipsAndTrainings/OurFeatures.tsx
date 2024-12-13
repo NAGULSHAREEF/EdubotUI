@@ -10,7 +10,7 @@ interface Course {
   opportunities: string
 }
 
-const courses: Course[] = [
+export const courses: Course[] = [
   {
     id: 1,
     title: 'Data engineering',
@@ -89,12 +89,13 @@ function CourseCard({ course }: { course: Course }) {
             <span>{course.opportunities} opportunities</span>
           </div>
         </div>
-        <a
-          href="#"
+        <Link to={`/internshipdetailpage/${course.id}`}>
+        <button
           className="text-[#00A1FF] text-[14px] font-[500] leading-[23px] inline-block hover:underline"
         >
           Know more &gt;
-        </a>
+        </button>
+        </Link>
       </div>
     </div>
   )

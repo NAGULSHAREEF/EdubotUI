@@ -1,9 +1,14 @@
-const GetIntouchDetails = () => {
-  return (
-    <div>
-        <h1>GetIntouchDetails</h1>
-    </div>
-  )
-}
-
-export default GetIntouchDetails
+interface GetIntouchDetailsProps {
+    duration: number; // Example property
+  }
+  
+  const GetIntouchDetails: React.FC<GetIntouchDetailsProps> = ({ duration }) => {
+    return (
+      <div>
+        <p>Duration: {duration} months</p>
+        {/* Other component content */}
+      </div>
+    );
+  }
+  
+  export default GetIntouchDetails;
