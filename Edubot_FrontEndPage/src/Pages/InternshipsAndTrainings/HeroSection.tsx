@@ -1,40 +1,44 @@
+import React from 'react'
+
 const HeroSection = () => {
   return (
-    <div className="h-full md:h-[480px] bg-[url('/src/assets/herosection-bg.png')] bg-cover bg-center">
-      <div className=" md:pl-24 ">
-        {/* Main Content Grid */}
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8 overflow-hidden md:py-0 py-10 md:px-0 px-8  md:overflow-visible items-center">
-          {/* Left Column - Text Content */}
-          <div className="overflow-hidden md:overflow-visible md:mt-2">
-            <p className="text-[#222222] text-[16px] md:text-[24px]">#our service - <span className="md:text-[24px] text-[16px] font-[500] md:font-bold">Internship and Training</span></p>
-            <h1 className="text-[32px] leading-[36px] mt-2 md:mt-2 md:text-[48px] md:leading-[60px] lg:text-[48px] md:w-[130%] w-[80%] lg:leading-[66px] font-bold text-[#1D1F71]">
-              Find opportunities tailored to your career goals and industry.
+    <section className="bg-[#1a1147]  w-full flex items-center">
+      <div className="container mx-auto px-4 md:px-12 py-8 md:py-5">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+          {/* Left Content */}
+          <div className=" md:w-[850px] md:px-0 px-2 space-y-6">
+            <h1 className="text-white text-[32px] leading-[36px] md:text-[48px] font-bold md:leading-[55px]  ">
+              Internship and training services with{' '}
+              <span className="text-[#ffa500]">Guaranteed Placement</span>
             </h1>
-            <p className="md:text-[24px] text-[17px] font-[400] mt-2 md:mt-3 md:font-[500]">Let's help you land your dream career</p>
             
-            <div className="md:mt-5 mt-2">
-              <button className="px-6 py-3 text-nowrap bg-[#F2B331] rounded-[30px] text-[14px] md:text-[18px] font-500 font-medium">
-                Explore Internships and Trannings
-              </button>
+            <p className="text-white text-[16px] leading-[18px] md:text-[24px] md:leading-[30px] ">
+              Over 200+ students are pursuing it.
+            </p>
+            
+            <div className="flex flex-wrap gap-4">
+              <div className=" border-[1px] rounded-[10px]  border-[#FFFFFF] text-white px-4 py-2 md:text-[18px] text-[16px]  ">
+                Over all reviews - <span className='md:text-[18px] text-[#F2B331]'>4.3</span>
+              </div>
+              <div className=" border-[1px] rounded-[10px] border-[#FFFFFF] md:text-[18px] text-white px-4 py-2  text-[16px]">
+                Introducing Corporate on campus
+              </div>
             </div>
           </div>
 
-          {/* Right Column - Image */}
-          <div className="mt-8 md:mt-0">
+          {/* Right Image */}
+          <div >
             <img 
-              src="/src/assets/Internshipsimage.png" 
-              alt="Students working together" 
-              className="w-full md:w-[620px] h-full rounded-lg object-cover"
+              src="/src/assets/gurantedplacement.png" 
+              alt="Student working at desk with analytics"
+              className="w-full h-auto max-w-[500px] mx-auto"
             />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
 export default HeroSection
-
-
-
 
