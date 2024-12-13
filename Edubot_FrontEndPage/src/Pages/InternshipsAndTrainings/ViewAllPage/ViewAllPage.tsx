@@ -434,15 +434,15 @@ export default function ViewAllPage() {
 
       {/* Updated Pagination */}
       {totalPages > 1 && (
-        <div className="flex justify-between items-center">
-          <div className="text-sm text-gray-600">
-            Page <span className="font-medium">{currentPage}</span>
+        <div className="flex justify-between md:px-48 items-center">
+          <div className="text-sm md:text-[20px] md:leading-[24px] font-[600] text-[#444343] ">
+            Page <span className="font-[600] md:pl-2">{currentPage}</span>
           </div>
           <div className="flex items-center gap-2">
             <button
               onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))}
               disabled={currentPage === 1}
-              className="p-2 rounded-full hover:bg-gray-100 disabled:opacity-50"
+              className="p-2 rounded-full text-[#1D1F71] disabled:opacity-50"
               aria-label="Previous page"
             >
               <ChevronLeft className="w-5 h-5" />

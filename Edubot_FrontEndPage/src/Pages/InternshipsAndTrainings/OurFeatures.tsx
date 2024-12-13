@@ -8,6 +8,7 @@ interface Course {
   image: string
   duration: number
   opportunities: string
+  backgroundColor: string
 }
 
 const courses: Course[] = [
@@ -17,7 +18,8 @@ const courses: Course[] = [
     type: 'internship',
     image: '/src/assets/feature1.png',
     duration: 8,
-    opportunities: '1.08 Lac+'
+    opportunities: '1.08 Lac+',
+    backgroundColor: 'bg-[#E7F8FF]'
   },
   {
     id: 2,
@@ -25,7 +27,8 @@ const courses: Course[] = [
     type: 'internship',
     image: '/src/assets/feature2.png',
     duration: 8,
-    opportunities: '1.08 Lac+'
+    opportunities: '1.08 Lac+',
+    backgroundColor: 'bg-[#F0FEDC]'
   },
   {
     id: 3,
@@ -33,7 +36,8 @@ const courses: Course[] = [
     type: 'internship',
     image: '/src/assets/feature3.png',
     duration: 8,
-    opportunities: '1.08 Lac+'
+    opportunities: '1.08 Lac+',
+    backgroundColor: 'bg-[#FFE4FA]'
   },
   {
     id: 4,
@@ -41,7 +45,8 @@ const courses: Course[] = [
     type: 'internship',
     image: '/src/assets/feature1.png',
     duration: 9,
-    opportunities: '1.5 Lac+'
+    opportunities: '1.5 Lac+',
+    backgroundColor: 'bg-[#E7F8FF]'
   },
   {
     id: 5,
@@ -49,24 +54,18 @@ const courses: Course[] = [
     type: 'training',
     image: '/src/assets/feature2.png',
     duration: 7,
-    opportunities: '2.0 Lac+'
+    opportunities: '2.0 Lac+',
+    backgroundColor: 'bg-[#F0FEDC]'
   }
 ]
 
-const backgroundColors = {
-  1: 'bg-[#E7F8FF]',  
-  2: 'bg-[#F0FEDC]',   
-  3: 'bg-[#FFE4FA]',  
-  4: 'bg-[#E7F8FF]', 
-  5: 'bg-[#F0FEDC]',   
-};
+
 
 function CourseCard({ course }: { course: Course }) {
-  const bgColorClass = backgroundColors[course.id] || 'bg-gray-50';
   
   return (
     <div className="bg-white  md:w-[380px] w-[340px] rounded-[20px_2px_20px_2px] shadow-md overflow-hidden border border-[#F2B331]">
-      <div className={`relative h-48 w-full ${bgColorClass}`}>
+      <div className={`relative h-48 w-full ${course.backgroundColor}`}>
         <img
           src={course.image}
           alt={course.title}
